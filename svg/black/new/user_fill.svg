@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="33px" viewBox="0 0 30 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>user_fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="15" cy="11" rx="9" ry="11" vector-effect="non-scaling-stroke"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="18" height="22" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-257.000000, -608.000000)" fill="#000000">
+            <g id="user_fill" transform="translate(257.000000, 608.000000)">
+                <path d="M29.6506326,28.4550945 C27.4957133,25.8378477 24.9035056,23.7923186 22.0264419,22.5113172 C20.1180091,24.0589369 17.7585817,25 15.2047184,25 C12.5872961,25 10.1741081,24.0115128 8.24134898,22.3946465 C5.25727582,23.666322 2.57094214,25.7568917 0.349367382,28.4550945 C4.13289698,30.7708502 9.30137265,32.1973233 15,32.1973233 C20.6986274,32.1973233 25.867103,30.7708502 29.6506326,28.4550945 Z" id="Combined-Shape" vector-effect="non-scaling-stroke"></path>
+                <use id="Oval-4-Copy" stroke="#000" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
