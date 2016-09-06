@@ -85,6 +85,9 @@ gulp.task("edit", function(){
             },
             replaceColor: function(content, hex) {
               return content.replace(/stroke="#(.*?)"/g, 'stroke="' + hex + '"')
+                .replace(/(\d*_fill)/, '')
+                .replace(/\d+\s*<\/title>/, '</title>')
+                .replace(/(\d*_)/, ' ')
                 .replace(/><\/path>/g, ' vector-effect="non-scaling-stroke"></path>')
                 .replace(/><\/circle>/g, ' vector-effect="non-scaling-stroke"></circle>')
                 .replace(/><\/ellipse>/g, ' vector-effect="non-scaling-stroke"></ellipse>')
