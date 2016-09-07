@@ -5,7 +5,8 @@ var config = {
     base: '.',
     hostname: '0.0.0.0',
     port: 8000,
-    keepalive: true
+    keepalive: true,
+    stdio: 'ignore',
   },
 
   browserSync: {
