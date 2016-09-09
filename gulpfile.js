@@ -4,14 +4,12 @@ var config = {
   server: {
     base: '.',
     hostname: '0.0.0.0',
-    port: 8000,
     keepalive: true,
     stdio: 'ignore',
   },
 
   browserSync: {
     proxy: '0.0.0.0:8000',
-    port: '3000',
     open: true,
     notify: false
   },
