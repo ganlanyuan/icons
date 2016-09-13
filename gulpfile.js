@@ -1,13 +1,11 @@
 var config = {
   sassLang: 'libsass',
-  
   server: {
     base: '.',
     hostname: '0.0.0.0',
     keepalive: true,
     stdio: 'ignore',
   },
-
   browserSync: {
     proxy: '0.0.0.0:8000',
     open: true,
@@ -49,7 +47,8 @@ var config = {
 
 var gulp = require('gulp');
 var php = require('gulp-connect-php');
-var sass;
+var libsass = require('gulp-sass');
+var rubysass = require('gulp-ruby-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -131,7 +130,7 @@ gulp.task('inject', ['edit'], function () {
 
 // svg to png
 gulp.task('svg2png', ['edit'], function () {
-  gulp.src(config.svg2png.src)
+  return gulp.src(config.svg2png.src)
     .pipe(svg2png(config.svg2png.setting))
     .pipe(imagemin())
     .pipe(gulp.dest(config.svg2png.dest));
