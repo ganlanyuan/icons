@@ -7,11 +7,11 @@
     <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(-320.000000, -608.000000)">
             <g id="share_circle_fill" transform="translate(320.000000, 608.000000)">
-                <circle id="Oval" fill="#000000" cx="6.5" cy="16.5" r="6.5" vector-effect="non-scaling-stroke"></circle>
-                <circle id="Oval" fill="#000000" cx="26.5" cy="26.5" r="5.5" vector-effect="non-scaling-stroke"></circle>
-                <circle id="Oval" fill="#000000" cx="26.5" cy="5.5" r="5.5" vector-effect="non-scaling-stroke"></circle>
-                <path d="M11.0625,13.6875 L21.8125,8.0625" id="Line" stroke="#000" vector-effect="non-scaling-stroke"></path>
-                <path d="M11.0625,20.0625 L22,25.125" id="Line" stroke="#000" vector-effect="non-scaling-stroke"></path>
+                <circle id="Oval" fill="#000000" cx="6.5" cy="16.5" r="6.5"></circle>
+                <circle id="Oval" fill="#000000" cx="26.5" cy="26.5" r="5.5"></circle>
+                <circle id="Oval" fill="#000000" cx="26.5" cy="5.5" r="5.5"></circle>
+                <path d="M11.0625,13.6875 L21.8125,8.0625" id="Line" stroke="#000"></path>
+                <path d="M11.0625,20.0625 L22,25.125" id="Line" stroke="#000"></path>
             </g>
         </g>
     </g>

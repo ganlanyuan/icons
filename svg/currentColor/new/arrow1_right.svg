@@ -7,7 +7,7 @@
     <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(-908.000000, -170.000000)" fill="#000000">
             <g id="arrow1_right" transform="translate(911.500000, 176.000000) rotate(-1.000000) translate(-911.500000, -176.000000) translate(908.000000, 170.000000)">
-                <polygon id="Triangle-Copy" points="7 0 7 12 0 6" vector-effect="non-scaling-stroke"></polygon>
+                <polygon id="Triangle-Copy" points="7 0 7 12 0 6"></polygon>
             </g>
         </g>
     </g>

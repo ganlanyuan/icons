@@ -7,9 +7,9 @@
     <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
         <g id="Artboard" transform="translate(-128.000000, -548.000000)" stroke="#fff" stroke-width="4">
             <g id="menu fill" transform="translate(130.000000, 548.000000)">
-                <path d="M0,2 L28,2" id="Line" vector-effect="non-scaling-stroke"></path>
-                <path d="M0,13 L28,13" id="Line" vector-effect="non-scaling-stroke"></path>
-                <path d="M0,24 L28,24" id="Line" vector-effect="non-scaling-stroke"></path>
+                <path d="M0,2 L28,2" id="Line"></path>
+                <path d="M0,13 L28,13" id="Line"></path>
+                <path d="M0,24 L28,24" id="Line"></path>
             </g>
         </g>
     </g>

@@ -22,6 +22,12 @@ var config = {
     dest: ['svg/black', 'svg/white', 'svg/currentColor'],
   },
 
+  svg_sprites: {
+    src: 'svg/black/**/*.svg',
+    dest: '',
+    name: 'sprites.svg',
+  },
+
   svgmin: {
     src: 'svg/**/*.svg',
     dest: 'svg-min/'
@@ -85,12 +91,12 @@ gulp.task("edit", function(){
               return content.replace(/stroke="#(.*?)"/g, 'stroke="' + hex + '"')
                 .replace(/(\d*_fill)/, '')
                 .replace(/\d+\s*<\/title>/, '</title>')
-                .replace(/(\d*_)/, ' ')
-                .replace(/><\/path>/g, ' vector-effect="non-scaling-stroke"></path>')
-                .replace(/><\/circle>/g, ' vector-effect="non-scaling-stroke"></circle>')
-                .replace(/><\/ellipse>/g, ' vector-effect="non-scaling-stroke"></ellipse>')
-                .replace(/><\/polygon>/g, ' vector-effect="non-scaling-stroke"></polygon>')
-                .replace(/><\/polyline>/g, ' vector-effect="non-scaling-stroke"></polyline>');
+                .replace(/(\d*_)/, ' ');
+                // .replace(/><\/path>/g, ' vector-effect="non-scaling-stroke"></path>')
+                // .replace(/><\/circle>/g, ' vector-effect="non-scaling-stroke"></circle>')
+                // .replace(/><\/ellipse>/g, ' vector-effect="non-scaling-stroke"></ellipse>')
+                // .replace(/><\/polygon>/g, ' vector-effect="non-scaling-stroke"></polygon>')
+                // .replace(/><\/polyline>/g, ' vector-effect="non-scaling-stroke"></polyline>');
             },
             replacePath: function(path, colorKey) {
               return path.replace(/\.svg/, '.svg');
@@ -112,10 +118,30 @@ gulp.task('min', ['edit'], function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task('svg_sprites', function () {
+  return gulp.src(config.svg_sprites.src)
+    .pipe(svgmin(function (file) {
+      var prefix = path.basename(file.relative, path.extname(file.relative));
+      return {
+        plugins: [{
+          cleanupIDs: {
+            prefix: prefix + '-',
+            minify: true
+          }
+        }],
+        // js2svg: { pretty: true }
+      }
+    }))
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename(config.svg_sprites.name))
+    .pipe(gulp.dest(config.svg_sprites.dest));
+});
+
 gulp.task('inject', ['edit'], function () {
   function fileContents (filepath, file) {
     if (filepath.slice(-4) === '.svg') {
-      return '<li><img src="' + filepath + '"><div class="icon-name">' + filepath.slice(filepath.search(/([^/]*)$/), -4) + '</div></li>';
+      var filename = filepath.slice(filepath.search(/([^/]*)$/), -4);
+      return '<li><svg role="img" title="' + filename + '"><use xlink:href="#' + filename + '"><div class="icon-name">' + filename + '</div></li>';
     }
   }
 
@@ -146,15 +172,17 @@ gulp.task('browser-sync', ['server'], function() {
 
 gulp.task('watch', function () {
   gulp.watch(config.edit.src, ['edit', 'min', 'svg2png']);
+  gulp.watch(config.svg_sprites.src, ['svg_sprites']);
   gulp.watch(config.watch.php).on('change', browserSync.reload);
   gulp.watch(config.watch.html).on('change', browserSync.reload);
 });
 
 // Default Task
 gulp.task('default', [
-  'min', 
-  'inject', 
-  'svg2png',
+  // 'min', 
+  // 'inject', 
+  // 'svg2png',
+  // 'svg_sprites',
   'browser-sync', 
   'watch',
 ]);  
