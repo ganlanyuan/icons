@@ -1,0 +1,24 @@
+{
+  "name": "icons",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ganlanyuan/icons",
+  "authors": [
+    "William <ganlanyuan@gmail.com>"
+  ],
+  "description": "Optimized icons for front-end development.",
+  "main": "svg/",
+  "keywords": [
+    "svg",
+    "icon",
+    "vector",
+    "optimize"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

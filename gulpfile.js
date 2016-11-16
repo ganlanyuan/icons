@@ -141,7 +141,7 @@ gulp.task('inject', ['edit'], function () {
   function fileContents (filepath, file) {
     if (filepath.slice(-4) === '.svg') {
       var filename = filepath.slice(filepath.search(/([^/]*)$/), -4);
-      return '<li><svg role="img" title="' + filename + '"><use xlink:href="#' + filename + '"><div class="icon-name">' + filename + '</div></li>';
+      return '<li><svg role="img" title="' + filename + '"><use xlink:href="#' + filename + '" /></svg><div class="icon-name">' + filename + '</div></li>';
     }
   }
 

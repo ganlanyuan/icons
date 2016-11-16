@@ -1,2 +1,2 @@
 # icons
-Optimized icons for websites.
+Optimized icons for front-end development.
