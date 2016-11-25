@@ -38,6 +38,7 @@
     svg ellipse,
     svg polygon,
     svg polyline { vector-effect: non-scaling-stroke; }
+    #sina_weibo path { vector-effect: none; }
     h2 {
       font-size: 24px;
       margin: 40px 20px 10px;
