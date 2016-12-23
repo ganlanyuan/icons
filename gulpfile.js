@@ -22,7 +22,11 @@ var config = {
   min: {
     options: {
       plugins: [{
-        floatPrecision: 2
+        convertPathData: {
+          floatPrecision: 1
+        }
+      }, {
+        mergePaths: false
       }, {
         convertColors: {
           currentColor: '#000000'
@@ -78,18 +82,6 @@ gulp.task('min', function () {
 
 gulp.task('sprites', function () {
   return gulp.src(config.allSvgs)
-    .pipe(svgmin(function (file) {
-      var prefix = path.basename(file.relative, path.extname(file.relative));
-      return {
-        plugins: [{
-          cleanupIDs: {
-            prefix: prefix + '-',
-            minify: true
-          }
-        }],
-        // js2svg: { pretty: true }
-      }
-    }))
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename(config.sprites.name))
     .pipe(gulp.dest(config.sprites.dest));
@@ -102,7 +94,7 @@ gulp.task('inject', function () {
       var foldernameTem = filepath.replace('/svg-min/', '');
       var foldername = foldernameTem.slice(0, foldernameTem.indexOf('/'));
       var clear = (config.clear.indexOf(filename) !== -1)? '<br><h2>' + foldername + '</h2>' : '';
-      return clear + '<div class="item"><svg role="img" title="' + filename + '"><use xlink:href="#' + filename + '" /></svg><input type="text" class="icon-name" id="' + filename + '-copy" value="' + filename + '"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#' + filename + '-copy">Copy</button></div>';
+      return clear + '<div class="item"><svg role="img" title="' + filename + '" id="' + filename + '"><use xlink:href="#' + filename + '" /></svg><input type="text" class="icon-name" id="' + filename + '-copy" value="' + filename + '"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#' + filename + '-copy">Copy</button></div>';
     }
   }
 
