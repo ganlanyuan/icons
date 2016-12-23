@@ -11,30 +11,32 @@ var config = {
     open: true,
     notify: false
   },
+  allSvgs: ['svg/**/*.svg', '!svg/social/currentColor/*.svg'],
+  newSvgs: 'svg/new/*.svg',
 
   watch: {
     php: '**/*.php',
   },
 
-  edit: {
-    src: 'svg-original/**/*.svg',
-    color: 'currentColor',
-    dest: 'svg',
+  min: {
+    options: {
+      plugins: [{
+        floatPrecision: 2
+      }, {
+        convertColors: {
+          currentColor: '#000000'
+        }
+      }]
+    },
+    dest: 'svg-min/new'
   },
 
-  svg_sprites: {
-    src: 'svg/**/*.svg',
+  sprites: {
     dest: '',
     name: 'sprites.svg',
   },
 
-  svgmin: {
-    src: 'svg/**/*.svg',
-    dest: 'svg-min/'
-  },
-
   inject: {
-    src: 'svg/**/*.svg',
     target: './index.php',
     starttag: '<!-- inject:svg -->',
     dest: './'
@@ -65,43 +67,16 @@ function errorlog (error) {
   this.emit('end');  
 }  
 
-gulp.task("edit", function(){
-  gulp.src(config.edit.src)
-      .pipe(colorize({
-        colors: {
-          default: {
-            blue: config.edit.color
-          },
-        },
-        replaceColor: function(content, hex) {
-          return content.replace(/stroke="#(.*?)"/g, 'stroke="' + hex + '"')
-            .replace(/(\d*-fill)/, '')
-            .replace(/\d+\s*<\/title>/, '</title>')
-            .replace(/(\d*-)/, ' ');
-            // .replace(/><\/path>/g, ' vector-effect="non-scaling-stroke"></path>')
-            // .replace(/><\/circle>/g, ' vector-effect="non-scaling-stroke"></circle>')
-            // .replace(/><\/ellipse>/g, ' vector-effect="non-scaling-stroke"></ellipse>')
-            // .replace(/><\/polygon>/g, ' vector-effect="non-scaling-stroke"></polygon>')
-            // .replace(/><\/polyline>/g, ' vector-effect="non-scaling-stroke"></polyline>');
-        },
-        replacePath: function(path, colorKey) {
-          return path.replace(/\.svg/, '.svg');
-        }
-      }))
-      .pipe(gulp.dest(config.edit.dest))
-      .pipe(browserSync.stream());
-});
-
 // Svg Task
-gulp.task('min', ['edit'], function () {
-  return gulp.src(config.svgmin.src)
-    .pipe(svgmin())
-    .pipe(gulp.dest(config.svgmin.dest))
+gulp.task('min', function () {
+  return gulp.src(config.newSvgs)
+    .pipe(svgmin(config.min.options))
+    .pipe(gulp.dest(config.min.dest))
     .pipe(browserSync.stream());
 });
 
-gulp.task('svg_sprites', function () {
-  return gulp.src(config.svg_sprites.src)
+gulp.task('sprites', function () {
+  return gulp.src(config.allSvgs)
     .pipe(svgmin(function (file) {
       var prefix = path.basename(file.relative, path.extname(file.relative));
       return {
@@ -115,20 +90,20 @@ gulp.task('svg_sprites', function () {
       }
     }))
     .pipe(svgstore({ inlineSvg: true }))
-    .pipe(rename(config.svg_sprites.name))
-    .pipe(gulp.dest(config.svg_sprites.dest));
+    .pipe(rename(config.sprites.name))
+    .pipe(gulp.dest(config.sprites.dest));
 });
 
-gulp.task('inject', ['edit'], function () {
+gulp.task('inject', function () {
   function fileContents (filepath, file) {
     if (filepath.slice(-4) === '.svg') {
       var filename = filepath.slice(filepath.search(/([^/]*)$/), -4);
-      return '<li><svg role="img" title="' + filename + '"><use xlink:href="#' + filename + '" /></svg><div class="icon-name">' + filename + '</div></li>';
+      return '<li><svg role="img" title="' + filename + '"><use xlink:href="#' + filename + '" /></svg><input type="text" class="icon-name" id="' + filename + '-copy" value="' + filename + '"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#' + filename + '-copy">Copy</button></li>';
     }
   }
 
   return gulp.src(config.inject.target)
-    .pipe(inject(gulp.src(config.inject.src), {
+    .pipe(inject(gulp.src(config.allSvgs), {
       starttag: config.inject.starttag,
       transform: fileContents
     }))
@@ -145,8 +120,8 @@ gulp.task('browser-sync', ['server'], function() {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(config.edit.src, ['edit', 'min']);
-  gulp.watch(config.svg_sprites.src, ['svg_sprites']);
+  // gulp.watch(config.min.src, ['min']);
+  // gulp.watch(config.sprites.src, ['sprites']);
   gulp.watch(config.watch.php).on('change', browserSync.reload);
   gulp.watch(config.watch.html).on('change', browserSync.reload);
 });
@@ -155,8 +130,7 @@ gulp.task('watch', function () {
 gulp.task('default', [
   // 'min', 
   // 'inject', 
-  // 'svg2png',
-  // 'svg_sprites',
+  // 'sprites',
   'browser-sync', 
   'watch',
 ]);  

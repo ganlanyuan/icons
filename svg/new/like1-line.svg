@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>like1-line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="like1-line" stroke="#000000">
+            <rect id="Rectangle-4" x="0.5" y="14.5" width="11" height="17"></rect>
+            <circle id="Oval-8" cx="6" cy="25.5" r="2"></circle>
+            <path d="M11.5,29 C11.5,29 13,30 15,30 L28,30 C28,30 31.5,29 30,26 C30,26 33,24.5 31,22 C31,22 33.5,19.5 31,17.5 C31,17.5 33.5,13.5 29.5,13 L24,13 C24,13 22,13.5 24,11 C30,5.5 23,-3 22,3 C21,7 19,8 17,10 C16,11 14,13.5 14,13.5 C14,13.5 12.5,16 11.5,16 L11.5,29 Z" id="Path-2"></path>
+        </g>
+    </g>
+</svg>

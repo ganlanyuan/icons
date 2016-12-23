@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>tag1-fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tag1-fill" fill="#000000">
+            <path d="M30,1.5 L17,0 L0,17 L14.5,31.5 L31.5,14.5 L30,1.5 Z M24,10.5 C25.6568542,10.5 27,9.15685425 27,7.5 C27,5.84314575 25.6568542,4.5 24,4.5 C22.3431458,4.5 21,5.84314575 21,7.5 C21,9.15685425 22.3431458,10.5 24,10.5 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

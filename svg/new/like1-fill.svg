@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>like1-fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="like1-fill">
+            <path d="M11,29 C11,29 12.6384996,30 14.5,30 L27.5,30 C27.5,30 31,29 29.5,26 C29.5,26 32.5,24.5 30.5,22 C30.5,22 33,19.5 30.5,17.5 C30.5,17.5 33,13.5 29,13 L23.5,13 C23.5,13 21.5,13 23.5,11 C29,5 22,-3 21.5,3 C21,7.5 18.5,8 16.5,10 C15.5,11 13.5,13.5 13.5,13.5 C13.5,13.5 12,16 11,16 L11,29 Z" id="Path-2" fill="#000000"></path>
+            <rect id="Combined-Shape" fill="#000000" x="0" y="15" width="10" height="17"></rect>
+            <ellipse id="Oval-8" fill="#FFFFFF" cx="5" cy="26" rx="2" ry="2"></ellipse>
+        </g>
+    </g>
+</svg>
