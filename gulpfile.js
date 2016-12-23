@@ -11,7 +11,7 @@ var config = {
     open: true,
     notify: false
   },
-  allSvgs: ['svg/**/*.svg', '!svg/social/currentColor/*.svg'],
+  allSvgs: ['svg-min/**/*.svg', '!svg-min/social/currentColor/*.svg'],
   newSvgs: 'svg/new/*.svg',
   clear: ['appstore', 'amazon', 'bd', 'add-circle-line'],
 
@@ -99,7 +99,7 @@ gulp.task('inject', function () {
   function fileContents (filepath, file) {
     if (filepath.slice(-4) === '.svg') {
       var filename = filepath.slice(filepath.search(/([^/]*)$/), -4);
-      var foldernameTem = filepath.replace('/svg/', '');
+      var foldernameTem = filepath.replace('/svg-min/', '');
       var foldername = foldernameTem.slice(0, foldernameTem.indexOf('/'));
       var clear = (config.clear.indexOf(filename) !== -1)? '<br><h2>' + foldername + '</h2>' : '';
       return clear + '<div class="item"><svg role="img" title="' + filename + '"><use xlink:href="#' + filename + '" /></svg><input type="text" class="icon-name" id="' + filename + '-copy" value="' + filename + '"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#' + filename + '-copy">Copy</button></div>';

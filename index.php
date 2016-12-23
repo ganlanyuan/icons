@@ -53,7 +53,7 @@
       width: 60px; 
       height: 60px; 
     }
-    .collection div:nth-child(-n+4) svg { 
+    .collection div:nth-child(-n+5) svg { 
       width: 180px;
     }
     br { margin-bottom: 50px; }
@@ -109,6 +109,7 @@
     <div class="item"><svg role="img" title="github_ring"><use xlink:href="#github_ring" /></svg><input type="text" class="icon-name" id="github_ring-copy" value="github_ring"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#github_ring-copy">Copy</button></div>
     <div class="item"><svg role="img" title="google"><use xlink:href="#google" /></svg><input type="text" class="icon-name" id="google-copy" value="google"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#google-copy">Copy</button></div>
     <div class="item"><svg role="img" title="googleplus"><use xlink:href="#googleplus" /></svg><input type="text" class="icon-name" id="googleplus-copy" value="googleplus"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#googleplus-copy">Copy</button></div>
+    <div class="item"><svg role="img" title="googleplus_noplus"><use xlink:href="#googleplus_noplus" /></svg><input type="text" class="icon-name" id="googleplus_noplus-copy" value="googleplus_noplus"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#googleplus_noplus-copy">Copy</button></div>
     <div class="item"><svg role="img" title="instagram"><use xlink:href="#instagram" /></svg><input type="text" class="icon-name" id="instagram-copy" value="instagram"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#instagram-copy">Copy</button></div>
     <div class="item"><svg role="img" title="linkedin"><use xlink:href="#linkedin" /></svg><input type="text" class="icon-name" id="linkedin-copy" value="linkedin"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#linkedin-copy">Copy</button></div>
     <div class="item"><svg role="img" title="location"><use xlink:href="#location" /></svg><input type="text" class="icon-name" id="location-copy" value="location"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#location-copy">Copy</button></div>
@@ -121,6 +122,7 @@
     <div class="item"><svg role="img" title="sina_weibo"><use xlink:href="#sina_weibo" /></svg><input type="text" class="icon-name" id="sina_weibo-copy" value="sina_weibo"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#sina_weibo-copy">Copy</button></div>
     <div class="item"><svg role="img" title="snapchat"><use xlink:href="#snapchat" /></svg><input type="text" class="icon-name" id="snapchat-copy" value="snapchat"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#snapchat-copy">Copy</button></div>
     <div class="item"><svg role="img" title="soundcloud"><use xlink:href="#soundcloud" /></svg><input type="text" class="icon-name" id="soundcloud-copy" value="soundcloud"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#soundcloud-copy">Copy</button></div>
+    <div class="item"><svg role="img" title="soundcloud_notext"><use xlink:href="#soundcloud_notext" /></svg><input type="text" class="icon-name" id="soundcloud_notext-copy" value="soundcloud_notext"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#soundcloud_notext-copy">Copy</button></div>
     <div class="item"><svg role="img" title="soundcloud_text"><use xlink:href="#soundcloud_text" /></svg><input type="text" class="icon-name" id="soundcloud_text-copy" value="soundcloud_text"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#soundcloud_text-copy">Copy</button></div>
     <div class="item"><svg role="img" title="tumblr"><use xlink:href="#tumblr" /></svg><input type="text" class="icon-name" id="tumblr-copy" value="tumblr"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#tumblr-copy">Copy</button></div>
     <div class="item"><svg role="img" title="twitter"><use xlink:href="#twitter" /></svg><input type="text" class="icon-name" id="twitter-copy" value="twitter"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#twitter-copy">Copy</button></div>
