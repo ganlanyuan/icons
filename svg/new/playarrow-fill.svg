@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="17px" viewBox="0 0 14 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>playarrow-fill</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="playarrow-fill" fill="#000000">
-            <polygon id="Triangle-2-Copy-2" points="0 0 14 9 0 17"></polygon>
+            <polygon id="Rectangle-10" points="0 0 36 24 0 48"></polygon>
         </g>
     </g>
 </svg>

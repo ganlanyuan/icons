@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>play-circle-fill</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="play-circle-fill" fill="#000000">
-            <path d="M16,32 C24.836556,32 32,24.836556 32,16 C32,7.163444 24.836556,0 16,0 C7.163444,0 0,7.163444 0,16 C0,24.836556 7.163444,32 16,32 Z M11,7 L25,16 L11,24 L11,7 Z" id="Combined-Shape"></path>
+            <path d="M24,47 C37.254834,47 48,36.4786916 48,23.5 C48,10.5213084 37.254834,0 24,0 C10.745166,0 0,10.5213084 0,23.5 C0,36.4786916 10.745166,47 24,47 Z M18,12 L18,36 L35.5,24 L18,12 Z" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>

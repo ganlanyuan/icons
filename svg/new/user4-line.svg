@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>user4-line</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-        <g id="user4-line" stroke="#000000">
-            <ellipse id="Shape" cx="16" cy="16" rx="15.5" ry="15.5"></ellipse>
-            <path d="M16,31.5 C10,31.5 7,28.5 7,28.5 C7,28.5 9.5,25 12.5,25 C13.5,25 13.5,23.5 13.5,23.5 C13.5,23.5 10.5,20.5455911 10.5,17.5 C10.5,16 10.5,10.5 16,10.5 C21.5,10.5 21.5,15 21.5,17.5 C21.5,21.039156 18.5,23.5 18.5,23.5 C18.5,23.5 18.5,25 19.5,25 C22,25 25,28.5 25,28.5 C25,28.5 22,31.5 16,31.5 Z" id="Path"></path>
+    <defs>
+        <ellipse id="path-1" cx="24" cy="24" rx="23.5" ry="23.5"></ellipse>
+    </defs>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="user4-line">
+            <ellipse id="Shape" stroke="#000000" stroke-linecap="square" cx="24" cy="24" rx="23.5" ry="23.5"></ellipse>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <path d="M19.5300455,36.4340777 L19.8424415,35.0059816 C16.7904527,33.3877073 15,29.9630779 15,26 C15,20.4771525 18.4771525,16 24,16 C29.5228475,16 33,20.4771525 33,26 C33,29.9630779 31.2095473,33.3877073 28.1575585,35.0059816 L28.4699545,36.4340777 C39.0329837,38.5145864 47,47.826895 47,59 C47,71.7025492 36.7025492,82 24,82 C11.2974508,82 1,71.7025492 1,59 C1,47.826895 8.96701635,38.5145864 19.5300455,36.4340777 L19.5300455,36.4340777 Z" id="Combined-Shape" stroke="#000000" mask="url(#mask-2)"></path>
         </g>
     </g>
 </svg>

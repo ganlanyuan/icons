@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="7px" height="33px" viewBox="0 0 7 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>menu-circle-fill-vertical</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="menu-circle-fill-vertical" fill="#000000">
-            <path d="M3.5,7 C5.43299662,7 7,5.43299662 7,3.5 C7,1.56700338 5.43299662,0 3.5,0 C1.56700338,0 0,1.56700338 0,3.5 C0,5.43299662 1.56700338,7 3.5,7 Z M3.5,20 C5.43299662,20 7,18.4329966 7,16.5 C7,14.5670034 5.43299662,13 3.5,13 C1.56700338,13 0,14.5670034 0,16.5 C0,18.4329966 1.56700338,20 3.5,20 Z M3.5,33 C5.43299662,33 7,31.4329966 7,29.5 C7,27.5670034 5.43299662,26 3.5,26 C1.56700338,26 0,27.5670034 0,29.5 C0,31.4329966 1.56700338,33 3.5,33 Z" id="Combined-Shape"></path>
+            <circle id="Oval-9" cx="24" cy="6" r="6"></circle>
+            <circle id="Oval-9" cx="24" cy="24" r="6"></circle>
+            <circle id="Oval-9" cx="24" cy="42" r="6"></circle>
         </g>
     </g>
 </svg>

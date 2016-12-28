@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>volumeup1-fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="volumeup1-fill">
+            <polygon id="Rectangle-13" fill="#000000" points="0 18 12 18 24 10 24 38 12 30 0 30"></polygon>
+            <path d="M29.193666,30.0850855 C30.9111853,28.61777 32,26.4360381 32,24 C32,21.5427953 30.8921819,19.3443355 29.1487539,17.8768285" id="Oval" stroke="#000000"></path>
+            <path d="M32.7929372,34.8948411 C35.9689359,32.3283609 38,28.4013707 38,24 C38,19.570413 35.9428109,15.6213083 32.7317141,13.0559673" id="Oval" stroke="#000000"></path>
+            <path d="M36.3552827,39.728348 C41.0104453,36.0664445 44,30.3823462 44,24 C44,17.6130353 41.006117,11.9253295 36.3451742,8.26370555" id="Oval" stroke="#000000"></path>
+        </g>
+    </g>
+</svg>

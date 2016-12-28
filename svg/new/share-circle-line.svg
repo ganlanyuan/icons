@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>share-circle-line</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="share-circle-line" stroke="#000000">
-            <path d="M11,14.5 L23.5,7.5" id="Line" stroke-linecap="square"></path>
-            <path d="M11,19.5 L23.5,26" id="Line" stroke-linecap="square"></path>
-            <circle id="Oval-14" stroke-width="0.916666667" cx="6" cy="17" r="5.5"></circle>
-            <circle id="Oval-14" stroke-width="0.916666667" cx="27.5" cy="5" r="4.5"></circle>
-            <circle id="Oval-14" stroke-width="0.916666667" cx="27.5" cy="28" r="4.5"></circle>
+            <circle id="Oval-2" cx="12" cy="24" r="11.5"></circle>
+            <circle id="Oval-12" cx="41" cy="7" r="6.5"></circle>
+            <circle id="Oval-12" cx="41" cy="41" r="6.5"></circle>
+            <path d="M22,18 L35.5,10.5" id="Path-26"></path>
+            <path d="M22.117035,29.9306757 L35.4322167,37.736127" id="Path-27"></path>
         </g>
     </g>
 </svg>

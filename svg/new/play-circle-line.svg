@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>play-circle-line</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="play-circle-line" stroke="#000000">
-            <circle id="Oval-10" cx="16" cy="16" r="15.5"></circle>
-            <polygon id="Triangle-2" points="11.5 7 24.5 15.5 11.5 23"></polygon>
+            <circle id="Oval-10" cx="24" cy="24" r="23.5"></circle>
+            <polygon id="Path-44" points="18.5 12 18.5 36 36 24"></polygon>
         </g>
     </g>
 </svg>
