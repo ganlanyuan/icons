@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>forward-line</title>
+    <title>pin-fill</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="forward-line" stroke="#000000">
-            <path d="M32.5,5 L47,20 L32.5,35 L32.5,28 L12,28 C12,28 0,28 0,40 C0,12 12,12 12,12 L32.5,12 L32.5,5 Z" id="Path-34"></path>
+        <g id="pin-fill" fill="#000000">
+            <path d="M24,47.5 C24,47.5 39.5,25.5 39.5,16 C39.5,7.43960211 32.5604136,0.5 24,0.5 C15.4395864,0.5 8.5,7.43962844 8.5,16 C8.5,26 24,47.5 24,47.5 Z M24,23.5 C28.1421356,23.5 31.5,20.1421356 31.5,16 C31.5,11.8578644 28.1421356,8.5 24,8.5 C19.8578644,8.5 16.5,11.8578644 16.5,16 C16.5,20.1421356 19.8578644,23.5 24,23.5 Z" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>
