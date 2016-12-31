@@ -3,17 +3,11 @@
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>user4-line</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <ellipse id="path-1" cx="24" cy="24" rx="23.5" ry="23.5"></ellipse>
-    </defs>
-    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="user4-line">
-            <ellipse id="Shape" stroke="#000000" stroke-linecap="square" cx="24" cy="24" rx="23.5" ry="23.5"></ellipse>
-            <mask id="mask-2" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-            <g id="Mask"></g>
-            <path d="M19.5300455,36.4340777 L19.8424415,35.0059816 C16.7904527,33.3877073 15,29.9630779 15,26 C15,20.4771525 18.4771525,16 24,16 C29.5228475,16 33,20.4771525 33,26 C33,29.9630779 31.2095473,33.3877073 28.1575585,35.0059816 L28.4699545,36.4340777 C39.0329837,38.5145864 47,47.826895 47,59 C47,71.7025492 36.7025492,82 24,82 C11.2974508,82 1,71.7025492 1,59 C1,47.826895 8.96701635,38.5145864 19.5300455,36.4340777 Z" id="Combined-Shape" stroke="#000000" mask="url(#mask-2)"></path>
+    <defs></defs>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="user4-line" stroke="#000000">
+            <ellipse id="Shape" cx="24" cy="24" rx="23.5" ry="23.5"></ellipse>
+            <path d="M39.306199,41.8322693 C36.2983248,39.1486581 32.5807226,37.2437402 28.4699545,36.4340777 L28.1575585,35.0059816 C31.2095473,33.3877073 33,29.9630779 33,26 C33,20.4771525 29.5228475,16 24,16 C18.4771525,16 15,20.4771525 15,26 C15,29.9630779 16.7904527,33.3877073 19.8424415,35.0059816 L19.5300455,36.4340777 C15.4192774,37.2437402 11.7016752,39.1486581 8.69380098,41.8322693 C12.8058321,45.3650598 18.153595,47.5 24,47.5 C29.846405,47.5 35.1941679,45.3650598 39.306199,41.8322693 Z" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>
