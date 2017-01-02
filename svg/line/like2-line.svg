@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>like2-line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="like2-line" stroke="#000000">
+            <rect id="Rectangle-6" x="0.5" y="19.5" width="9" height="26"></rect>
+            <path d="M29.8181818,3.63636364 C23.2727273,21.0909091 13.5,18.1818182 13.5,24 L13.5,42.5 C13.5,49.7727273 35.6363636,45.8181818 35.6363636,45.8181818 C40.7272727,45.0909091 41.4545455,39.2727273 45.0909091,32 C48,26.9090909 48,19.6363636 42.1818182,19.6363636 L31.2727273,19.6363636 C31.2727273,19.6363636 37.0909091,15.2727273 37.8181818,9.45454545 C38.5454545,-1.45454545 31.2727273,-1.25455202e-14 29.8181818,3.63636364 Z" id="Path" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

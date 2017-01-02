@@ -12,8 +12,8 @@ var config = {
     notify: false
   },
   allSvgs: ['svg-min/**/*.svg', '!svg-min/social/currentColor/*.svg'],
-  newSvgs: 'svg/new/*.svg',
-  clear: ['appstore', 'amazon', 'bd', 'add-circle-line'],
+  newSvgs: ['svg/line/*.svg', 'svg/fill/*.svg'],
+  clear: ['appstore', 'amazon', 'bd', 'add-circle-line', 'dislike1-fill'],
 
   watch: {
     php: '**/*.php',
@@ -33,7 +33,8 @@ var config = {
         }
       }]
     },
-    dest: 'svg-min/new'
+    base: 'svg',
+    dest: 'svg-min'
   },
 
   sprites: {
@@ -74,7 +75,7 @@ function errorlog (error) {
 
 // Svg Task
 gulp.task('min', function () {
-  return gulp.src(config.newSvgs)
+  return gulp.src(config.newSvgs, {base: config.min.base})
     .pipe(svgmin(config.min.options))
     .pipe(gulp.dest(config.min.dest))
     .pipe(browserSync.stream());
