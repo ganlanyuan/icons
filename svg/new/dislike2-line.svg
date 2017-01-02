@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>dislike2-line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dislike2-line" stroke="#000000">
+            <rect id="Rectangle-6" transform="translate(43.000000, 15.500000) scale(-1, -1) translate(-43.000000, -15.500000) " x="38.5" y="2.5" width="9" height="26"></rect>
+            <path d="M17.316424,3.78142122 C10.7709695,21.2359667 0.998242183,18.3268758 0.998242183,24.1450576 L0.998242183,42.6450576 C0.998242183,49.9177849 23.1346058,45.9632394 23.1346058,45.9632394 C28.2255149,45.2359667 28.9527876,39.4177849 32.5891513,32.1450576 C35.4982422,27.0541485 35.4982422,19.7814212 29.6800604,19.7814212 L18.7709695,19.7814212 C18.7709695,19.7814212 24.5891513,15.4177849 25.316424,9.59960304 C26.0436967,-1.30948787 18.7709695,0.145057583 17.316424,3.78142122 Z" id="Path" stroke-linecap="square" transform="translate(17.749121, 24.072529) scale(-1, -1) translate(-17.749121, -24.072529) "></path>
+        </g>
+    </g>
+</svg>

@@ -6,7 +6,7 @@
     <defs></defs>
     <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="share-circle-fill">
-            <circle id="Oval-2" fill="#000000" cx="12" cy="24" r="12"></circle>
+            <circle id="Oval-2" fill="#000000" cx="10" cy="24" r="10"></circle>
             <circle id="Oval-12" fill="#000000" cx="41" cy="7" r="7"></circle>
             <circle id="Oval-12" fill="#000000" cx="41" cy="41" r="7"></circle>
             <path d="M12,24 L41,41" id="Path-17" stroke="#000000"></path>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>dislike2-fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dislike2-fill" fill="#000000">
+            <rect id="Rectangle-6" transform="translate(42.859375, 13.953125) scale(-1, -1) translate(-42.859375, -13.953125) " x="37.71875" y="0" width="10.28125" height="27.90625"></rect>
+            <path d="M18.8986156,3.16548647 C13.0236156,22.2592365 1.27361564,17.8529865 1.27361564,23.7279865 C1.27361564,23.7279865 1.27361564,41.307088 1.27361564,41.3529865 C1.27361564,48.6967365 24.7736156,45.7592365 24.7736156,45.7592365 C29.9142406,45.0248615 30.6486156,38.4154865 34.3204906,31.8061115 C37.2579906,26.6654865 37.2579906,19.3217365 31.3829906,19.3217365 L20.3673656,19.3217365 C20.3673656,19.3217365 26.2423656,14.9154865 26.9767406,9.04048647 C27.7111156,-1.97513853 20.3673656,-1.24076353 18.8986156,3.16548647 Z" id="Path" transform="translate(18.761808, 23.246806) scale(-1, -1) translate(-18.761808, -23.246806) "></path>
+        </g>
+    </g>
+</svg>
