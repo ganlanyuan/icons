@@ -10,23 +10,26 @@
       background: #f5f5f5;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
-    h2 {
-      text-transform: capitalize;
-    }
     .collection {
       margin: 0;
       padding: 0;
       text-align: center;
+      letter-spacing: -0.34em;
+    }
+    h2 {
+      text-transform: capitalize;
+      letter-spacing: 0;
     }
     .item {
       display: inline-block;
+      letter-spacing: 0;
       text-align: left;
       padding: 1.5em 1em;
+      margin: 10px;
       background: #fff;
       list-style: none;
       white-space: nowrap;
       text-align: center;
-      overflow: hidden;
     }
     .item:hover input,
     .item:hover button {
@@ -36,19 +39,6 @@
       color: #fff;
       background-color: #000;
     }
-    .item:after {
-      content: "Copied!";
-      position: absolute;
-      display: block;
-      padding: 4px 10px;
-      font-size: 12px;
-      background: #91FF7D;
-      opacity: 0;
-      -webkit-transition: opacity 0.3s;
-      -o-transition: opacity 0.3s;
-      transition: opacity 0.3s;
-    }
-    .copied:after { opacity: 1; }
     .collection svg { 
       width: 61px; 
       height: 61px; 
@@ -85,7 +75,25 @@
       color: #000;
       background: #eee;
       cursor: pointer;
+      position: relative;
     }
+    button:after {
+      content: "Copied!";
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      top: 2.6em;
+      color: #000;
+      display: block;
+      line-height: 2.6;
+      padding: 0 10px;
+      background: #ffce84;
+      opacity: 0;
+      -webkit-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      transition: opacity 0.3s;
+    }
+    .copied:after { opacity: 1; }
     #menu1-line path { transition: all 0.3s; transform-origin: 50% 50%; }
     /* hover */
     /*#menu1-line:hover path:nth-child(1) { transform: translateY(-4px); }
@@ -280,10 +288,10 @@
 <script>
   var clipboard = new Clipboard('.copy-button');
   clipboard.on('success', function(e) {
-      console.log(e.trigger.parentNode);
-      e.trigger.parentNode.className = 'item copied';
+      console.log(e.trigger);
+      e.trigger.classList.add('copied');
       setTimeout(function () {
-        e.trigger.parentNode.className = 'item';
+        e.trigger.classList.remove('copied');
       }, 1000);
 
       e.clearSelection();

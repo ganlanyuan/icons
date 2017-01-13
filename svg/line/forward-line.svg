@@ -6,7 +6,7 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="forward-line" stroke="#000000">
-            <path d="M32.5,5 L47,20 L32.5,35 L32.5,28 L12,28 C12,28 0,28 0,40 C0,12 12,12 12,12 L32.5,12 L32.5,5 Z" id="Path-34"></path>
+            <path d="M32.5,5 L47,20 L32.5,35 L32.5,28 C32.5,28 -3.46944695e-18,28 -3.46944695e-18,44 C-3.46944695e-18,12 32.5,12 32.5,12 L32.5,5 Z" id="Path-34"></path>
         </g>
     </g>
 </svg>

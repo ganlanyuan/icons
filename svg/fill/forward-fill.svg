@@ -6,7 +6,7 @@
     <defs></defs>
     <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="forward-fill" fill="#000000">
-            <path d="M33,5 L48,20 L33,35 L33,28 L12,28 C12,28 0,28 0,40 C0,12 12,12 12,12 L33,12 L33,5 Z" id="Path-34"></path>
+            <path d="M33,5 L48,20 L33,35 L33,28 C33,28 0,28 0,44 C0,12 33,12 33,12 L33,5 Z" id="Path-34"></path>
         </g>
     </g>
 </svg>
