@@ -10,6 +10,23 @@
       background: #f5f5f5;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
+    .form-search {
+      position: fixed;
+      z-index: 2000;
+      width: 100%;
+      background: #f5f5f5;
+    }
+    .form-search + div {
+      padding-top: 50px;
+    }
+    #search {
+      font-size: 24px;
+      display: block;
+      width: 100%;
+      max-width: 1200px;
+      margin: 10px auto;
+      border: 5px solid #000;
+    }
     .collection {
       margin: 0;
       padding: 0;
@@ -94,6 +111,7 @@
       transition: opacity 0.3s;
     }
     .copied:after { opacity: 1; }
+    .hidden { display: none; }
     #menu1-line path { transition: all 0.3s; transform-origin: 50% 50%; }
     /* hover */
     /*#menu1-line:hover path:nth-child(1) { transform: translateY(-4px); }
@@ -111,6 +129,9 @@
 </head>
 <body>
   <div style="height: 0; width: 0; position: absolute; visibility: hidden"><?php include_once 'sprites.svg'; ?></div>
+  <form action="" class="form-search">
+    <input type="text" id="search" placeholder='Press "S" to start seach' autofocus="">
+  </form>
   <div class="collection">
     <!-- inject:svg -->
     <br><h2>app store badges</h2><div class="item"><svg role="img" title="appstore" id="appstore"><use xlink:href="#appstore" /></svg><input type="text" class="icon-name" id="appstore-copy" value="appstore"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#appstore-copy">Copy</button></div>
@@ -301,6 +322,58 @@
       console.error('Action:', e.action);
       console.error('Trigger:', e.trigger);
   });
+
+  var svgNames = [],
+      doc = document;
+  window.addEventListener('load', function () {
+    var svgs = doc.querySelectorAll('.item svg');
+    for (var i = svgs.length; i--;) {
+      var title = svgs[i].getAttribute('title');
+      if (title !== null) {
+        svgNames.push(title);
+      }
+    }
+  });
+
+  function onKeyup(e) {
+    e = e || window.event;
+    var code = e.keyCode,
+        searchBar = doc.getElementById('search'),
+        keywords = searchBar.value,
+        h2s = doc.querySelectorAll('h2, br');
+
+    for (var h = h2s.length; h--;) {
+      var h2 = h2s[h];
+      if (keywords.length > 0 && keywords !== ' ') {
+        if (!h2.classList.contains('hidden')) { h2.classList.add('hidden'); }
+      } else {
+        if (h2.classList.contains('hidden')) { h2.classList.remove('hidden'); }
+      }
+    }
+
+    for (var i = svgNames.length; i--;) {
+      var id = svgNames[i],
+          svg = doc.querySelector('.item #' + id),
+          parent = svg.parentNode;
+
+      if (keywords.length > 0 && keywords !== ' ') {
+        if (id.indexOf(keywords) === -1) {
+          if (!parent.classList.contains('hidden')) {
+            parent.classList.add('hidden');
+          }
+        } else {
+          if (parent.classList.contains('hidden')) {
+            parent.classList.remove('hidden');
+          }
+        }
+      } else {
+        if (parent.classList.contains('hidden')) {
+          parent.classList.remove('hidden');
+        }
+      }
+    }
+  }
+  document.addEventListener('keyup', onKeyup, false);
 </script>
 </body>
 </html>
