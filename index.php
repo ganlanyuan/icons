@@ -130,7 +130,7 @@
 <body>
   <div style="height: 0; width: 0; position: absolute; visibility: hidden"><?php include_once 'sprites.svg'; ?></div>
   <form action="" class="form-search">
-    <input type="text" id="search" placeholder='Press "S" to start seach' autofocus="">
+    <input type="text" id="search" placeholder='Press "/" to start seach' autofocus="">
   </form>
   <div class="collection">
     <!-- inject:svg -->
@@ -335,6 +335,16 @@
     }
   });
 
+  function onKeydown(e) {
+    e = e || window.event;
+    var code = e.keyCode,
+        searchBar = doc.getElementById('search');
+
+    if (code === 191 && searchBar !== document.activeElement) {
+      searchBar.focus();
+    }
+  }
+
   function onKeyup(e) {
     e = e || window.event;
     var code = e.keyCode,
@@ -342,37 +352,43 @@
         keywords = searchBar.value,
         h2s = doc.querySelectorAll('h2, br');
 
-    for (var h = h2s.length; h--;) {
-      var h2 = h2s[h];
-      if (keywords.length > 0 && keywords !== ' ') {
-        if (!h2.classList.contains('hidden')) { h2.classList.add('hidden'); }
-      } else {
-        if (h2.classList.contains('hidden')) { h2.classList.remove('hidden'); }
+    if (code !== 191) {
+      for (var h = h2s.length; h--;) {
+        var h2 = h2s[h];
+        if (keywords.length > 0 && keywords !== ' ') {
+          if (!h2.classList.contains('hidden')) { h2.classList.add('hidden'); }
+        } else {
+          if (h2.classList.contains('hidden')) { h2.classList.remove('hidden'); }
+        }
       }
-    }
 
-    for (var i = svgNames.length; i--;) {
-      var id = svgNames[i],
-          svg = doc.querySelector('.item #' + id),
-          parent = svg.parentNode;
+      for (var i = svgNames.length; i--;) {
+        var id = svgNames[i],
+            svg = doc.querySelector('.item #' + id),
+            parent = svg.parentNode;
 
-      if (keywords.length > 0 && keywords !== ' ') {
-        if (id.indexOf(keywords) === -1) {
-          if (!parent.classList.contains('hidden')) {
-            parent.classList.add('hidden');
+        if (keywords.length > 0 && keywords !== ' ') {
+          if (id.indexOf(keywords) === -1) {
+            if (!parent.classList.contains('hidden')) {
+              parent.classList.add('hidden');
+            }
+          } else {
+            if (parent.classList.contains('hidden')) {
+              parent.classList.remove('hidden');
+            }
           }
         } else {
           if (parent.classList.contains('hidden')) {
             parent.classList.remove('hidden');
           }
         }
-      } else {
-        if (parent.classList.contains('hidden')) {
-          parent.classList.remove('hidden');
-        }
       }
+    } else {
+      searchBar.value = '';
     }
   }
+
+  document.addEventListener('keydown', onKeydown, false);
   document.addEventListener('keyup', onKeyup, false);
 </script>
 </body>
