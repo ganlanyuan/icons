@@ -324,9 +324,12 @@
   });
 
   var svgNames = [],
-      doc = document;
+      doc = document,
+      svgs = doc.querySelectorAll('.item svg'),
+      searchBar = doc.getElementById('search'),
+      h2s = doc.querySelectorAll('h2, br');
+
   window.addEventListener('load', function () {
-    var svgs = doc.querySelectorAll('.item svg');
     for (var i = svgs.length; i--;) {
       var title = svgs[i].getAttribute('title');
       if (title !== null) {
@@ -337,8 +340,7 @@
 
   function onKeydown(e) {
     e = e || window.event;
-    var code = e.keyCode,
-        searchBar = doc.getElementById('search');
+    var code = e.keyCode;
 
     if (code === 191 && searchBar !== document.activeElement) {
       searchBar.focus();
@@ -348,9 +350,7 @@
   function onKeyup(e) {
     e = e || window.event;
     var code = e.keyCode,
-        searchBar = doc.getElementById('search'),
-        keywords = searchBar.value,
-        h2s = doc.querySelectorAll('h2, br');
+        keywords = searchBar.value;
 
     if (code !== 191) {
       for (var h = h2s.length; h--;) {
@@ -384,7 +384,7 @@
         }
       }
     } else {
-      searchBar.value = '';
+      searchBar.value = searchBar.value.replace('/', '');
     }
   }
 
