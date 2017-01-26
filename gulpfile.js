@@ -15,9 +15,7 @@ var config = {
   newSvgs: ['svg/line/*.svg', 'svg/fill/*.svg'],
   clear: ['appstore', 'amazon', 'bd', 'add-circle-line', 'dislike1-fill'],
 
-  watch: {
-    php: '**/*.php',
-  },
+  watch: ['*.html', 'assets/**/*.css', 'assets/**/*.js'],
 
   min: {
     options: {
@@ -43,8 +41,8 @@ var config = {
   },
 
   inject: {
-    target: './index.php',
-    starttag: '<!-- inject:svg -->',
+    target: './index.html',
+    starttagMarkup: '<!-- inject:markup -->',
     dest: './'
   },
 
@@ -89,20 +87,20 @@ gulp.task('sprites', function () {
 });
 
 gulp.task('inject', function () {
-  function fileContents (filepath, file) {
+  function fileContentsMarkup (filepath, file) {
     if (filepath.slice(-4) === '.svg') {
       var filename = filepath.slice(filepath.search(/([^/]*)$/), -4);
       var foldernameTem = filepath.replace('/svg-min/', '');
       var foldername = foldernameTem.slice(0, foldernameTem.indexOf('/'));
       var clear = (config.clear.indexOf(filename) !== -1)? '<br><h2>' + foldername + '</h2>' : '';
-      return clear + '<div class="item"><svg role="img" title="' + filename + '" id="' + filename + '"><use xlink:href="#' + filename + '" /></svg><input type="text" class="icon-name" id="' + filename + '-copy" value="' + filename + '"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#' + filename + '-copy">Copy</button></div>';
+      return clear + '<div class="item"><svg role="img" title="' + filename + '" id="' + filename + '"><use xlink:href="sprites.svg#' + filename + '" /></svg><input type="text" class="icon-name" id="' + filename + '-copy" value="' + filename + '"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#' + filename + '-copy">Copy</button></div>';
     }
   }
 
   return gulp.src(config.inject.target)
     .pipe(inject(gulp.src(config.allSvgs), {
-      starttag: config.inject.starttag,
-      transform: fileContents
+      starttag: config.inject.starttagMarkup,
+      transform: fileContentsMarkup
     }))
     .pipe(gulp.dest(config.inject.dest))
     .pipe(browserSync.stream());
@@ -119,8 +117,7 @@ gulp.task('browser-sync', ['server'], function() {
 gulp.task('watch', function () {
   // gulp.watch(config.min.src, ['min']);
   // gulp.watch(config.sprites.src, ['sprites']);
-  gulp.watch(config.watch.php).on('change', browserSync.reload);
-  gulp.watch(config.watch.html).on('change', browserSync.reload);
+  gulp.watch(config.watch).on('change', browserSync.reload);
 });
 
 // Default Task
