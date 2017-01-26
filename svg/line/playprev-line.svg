@@ -6,8 +6,8 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="playprev-line" stroke="#000000">
-            <polygon id="Rectangle-14" points="47.5 1 16 24 47.5 48"></polygon>
-            <rect id="Rectangle" x="0.5" y="0.5" width="8" height="47"></rect>
+            <polygon id="Rectangle-14" points="46.5 3 19 23.0638298 46.5 44"></polygon>
+            <rect id="Rectangle" x="1.5" y="4" width="7" height="40"></rect>
         </g>
     </g>
 </svg>

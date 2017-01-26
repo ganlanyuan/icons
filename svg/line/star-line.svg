@@ -6,7 +6,7 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="star-line" stroke="#000000">
-            <polygon id="Star" points="24 38.8333333 9.625 46 12.5 30.2333333 1 18.7666667 16.8125 17.3333333 24 3 31.1875 17.3333333 47 18.7666667 35.5 30.2333333 38.375 46"></polygon>
+            <polygon id="Star" points="24 38.8333333 10.25 46 13 30.2333333 2 18.7666667 17.125 17.3333333 24 3 30.875 17.3333333 46 18.7666667 35 30.2333333 37.75 46"></polygon>
         </g>
     </g>
 </svg>

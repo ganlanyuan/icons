@@ -6,9 +6,9 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="unchecked-circle-line" stroke="#000000">
-            <path d="M13.5,13.5 L34.5,34.5" id="Line"></path>
-            <path d="M34.5,13.5 L13.5,34.5" id="Line"></path>
-            <circle id="Oval-7" cx="24" cy="24" r="23.5"></circle>
+            <path d="M14.5,14.5 L34.0868584,34.0868584" id="Line"></path>
+            <path d="M33.5,14.5 L13.9131416,34.0868584" id="Line"></path>
+            <circle id="Oval-7" cx="24" cy="24" r="22.5"></circle>
         </g>
     </g>
 </svg>

@@ -6,8 +6,8 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="search-line" stroke="#000000">
-            <path d="M32,32 L48,48" id="Path-33"></path>
-            <circle id="Oval-4" cx="19" cy="19" r="18.5"></circle>
+            <path d="M31.6000004,31.6000004 L46.2947191,46.2947191" id="Path-33"></path>
+            <circle id="Oval-4" cx="19" cy="19" r="17.5"></circle>
         </g>
     </g>
 </svg>

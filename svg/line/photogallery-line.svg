@@ -6,8 +6,8 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="photogallery-line" stroke="#000000">
-            <rect id="Rectangle-15" x="0.5" y="12.5" width="35" height="35"></rect>
-            <polyline id="Rectangle-16" points="12.5 8 12.5 0.5 47.5 0.5 47.5 35.5 40 35.5"></polyline>
+            <rect id="Rectangle-15" x="1.5" y="12.5" width="34" height="34"></rect>
+            <polyline id="Rectangle-16" points="12.5 8.78571429 12.5 1.5 46.5 1.5 46.5 35.5 39.2142857 35.5"></polyline>
         </g>
     </g>
 </svg>

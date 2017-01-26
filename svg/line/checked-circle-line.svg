@@ -6,8 +6,8 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="checked-circle-line" stroke="#000000">
-            <polyline id="right" points="10 25 20 35 40 15"></polyline>
-            <circle id="Oval-11" cx="24" cy="24" r="23.5"></circle>
+            <polyline id="right" points="11 25 20.3333333 34 39 16"></polyline>
+            <circle id="Oval-11" cx="24" cy="24" r="22.5"></circle>
         </g>
     </g>
 </svg>

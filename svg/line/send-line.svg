@@ -6,9 +6,9 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="send-line" stroke="#000000">
-            <polyline id="Path-12" points="0.5 28.5 0.5 42 47.5 42 47.5 28.5"></polyline>
+            <polyline id="Path-12" points="1.5 29.5 1.5 42 46.5 42 46.5 29.5"></polyline>
             <path d="M16,28 L39,5" id="Path-14"></path>
-            <polyline id="Path-13" points="26 4.5 39.5 4.5 39.5 18"></polyline>
+            <polyline id="Path-13" points="28 4.5 39.5 4.5 39.5 16"></polyline>
         </g>
     </g>
 </svg>

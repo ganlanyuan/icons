@@ -6,9 +6,9 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="menu-rect-line-vertical" stroke="#000000">
-            <rect id="Rectangle-5" x="18.5" y="0.5" width="11" height="11"></rect>
-            <rect id="Rectangle-5" x="18.5" y="18.5" width="11" height="11"></rect>
-            <rect id="Rectangle-5" x="18.5" y="36.5" width="11" height="11"></rect>
+            <rect id="Rectangle-5" x="19.5" y="1.5" width="9" height="9"></rect>
+            <rect id="Rectangle-5" x="19.5" y="19.5" width="9" height="9"></rect>
+            <rect id="Rectangle-5" x="19.5" y="37.5" width="9" height="9"></rect>
         </g>
     </g>
 </svg>
