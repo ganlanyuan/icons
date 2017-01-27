@@ -33,8 +33,10 @@ function onKeydown(e) {
   e = e || window.event;
   var code = e.keyCode;
 
-  if (code === 191 && searchBar !== document.activeElement) {
+  if (code === 191 && searchBar !== doc.activeElement) {
     searchBar.focus();
+  } else if (code === 13) {
+    e.preventDefault();
   }
 }
 
@@ -79,5 +81,23 @@ function onKeyup(e) {
   }
 }
 
-document.addEventListener('keydown', onKeydown, false);
-document.addEventListener('keyup', onKeyup, false);
+doc.addEventListener('keydown', onKeydown, false);
+doc.addEventListener('keyup', onKeyup, false);
+
+var searchClear = doc.querySelector('.search-clear');
+searchClear.addEventListener('click', function () {
+  if (searchBar.value !== '') { searchBar.value = ''; }
+  
+  for (var h = h2s.length; h--;) {
+    var h2 = h2s[h];
+    if (h2.classList.contains('hidden')) { h2.classList.remove('hidden'); }
+  }
+
+  for (var i = svgNames.length; i--;) {
+    var id = svgNames[i],
+        svg = doc.querySelector('.item #' + id),
+        parent = svg.parentNode;
+
+    if (parent.classList.contains('hidden')) { parent.classList.remove('hidden'); }
+  }
+});

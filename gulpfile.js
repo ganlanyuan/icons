@@ -92,7 +92,7 @@ gulp.task('inject', function () {
       var filename = filepath.slice(filepath.search(/([^/]*)$/), -4);
       var foldernameTem = filepath.replace('/svg-min/', '');
       var foldername = foldernameTem.slice(0, foldernameTem.indexOf('/'));
-      var clear = (config.clear.indexOf(filename) !== -1)? '<br><h2>' + foldername + '</h2>' : '';
+      var clear = (config.clear.indexOf(filename) !== -1)? '<h2>' + foldername + '</h2>' : '';
       return clear + '<div class="item"><svg role="img" title="' + filename + '" id="' + filename + '"><use xlink:href="sprites.svg#' + filename + '" /></svg><input type="text" class="icon-name" id="' + filename + '-copy" value="' + filename + '"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#' + filename + '-copy">Copy</button></div>';
     }
   }
