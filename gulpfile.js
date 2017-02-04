@@ -49,22 +49,24 @@ var config = {
 };
 
 var gulp = require('gulp');
-var php = require('gulp-connect-php');
-var libsass = require('gulp-sass');
-var rubysass = require('gulp-ruby-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemin');
+// var php = require('gulp-connect-php');
+// var libsass = require('gulp-sass');
+// var rubysass = require('gulp-ruby-sass');
+// var sourcemaps = require('gulp-sourcemaps');
+// var concat = require('gulp-concat');
+// var uglify = require('gulp-uglify');
+// var imagemin = require('gulp-imagemin');
 var svgstore = require('gulp-svgstore');
-var path = require('path');
-var svgmin = require('gulp-svgmin');
-var svg2png = require('gulp-svg2png');
-var inject = require('gulp-inject');
-var browserSync = require('browser-sync').create();
+var cheerio = require('gulp-cheerio');
+// var svgSprite = require("gulp-svg-sprites");
+// var path = require('path');
+// var svgmin = require('gulp-svgmin');
+// var svg2png = require('gulp-svg2png');
+// var inject = require('gulp-inject');
+// var browserSync = require('browser-sync').create();
 var rename = require('gulp-rename');
-var colorize = require('gulp-colorize-svgs');
-var mergeStream = require('merge-stream');
+// var colorize = require('gulp-colorize-svgs');
+// var mergeStream = require('merge-stream');
 
 function errorlog (error) {  
   console.error.bind(error);  
@@ -77,6 +79,18 @@ gulp.task('min', function () {
     .pipe(svgmin(config.min.options))
     .pipe(gulp.dest(config.min.dest))
     .pipe(browserSync.stream());
+});
+
+gulp.task('removeSvgFill', function () {
+  return gulp.src(config.allSvgs)
+    .pipe(cheerio(function ($, file) {
+      $('svg[fill]').each(function() {
+        var fillColor = $(this).attr('fill');
+        $(this).html('<g fill="' + fillColor + '">' + $(this).html() + '</g>');
+        $(this).removeAttr('fill');
+      });
+    }))
+    .pipe(gulp.dest('svg-min'))
 });
 
 gulp.task('sprites', function () {
