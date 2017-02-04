@@ -1,14 +1,10 @@
 var config = {
   sassLang: 'libsass',
-  server: {
-    base: '.',
-    hostname: '0.0.0.0',
-    keepalive: true,
-    stdio: 'ignore',
-  },
   browserSync: {
-    proxy: '0.0.0.0:8000',
-    open: true,
+    server: {
+      baseDir: './'
+    },
+    open: false,
     notify: false
   },
   allSvgs: ['svg-min/**/*.svg', '!svg-min/social/currentColor/*.svg'],
@@ -49,24 +45,23 @@ var config = {
 };
 
 var gulp = require('gulp');
-// var php = require('gulp-connect-php');
-// var libsass = require('gulp-sass');
-// var rubysass = require('gulp-ruby-sass');
-// var sourcemaps = require('gulp-sourcemaps');
-// var concat = require('gulp-concat');
-// var uglify = require('gulp-uglify');
-// var imagemin = require('gulp-imagemin');
+var php = require('gulp-connect-php');
+var libsass = require('gulp-sass');
+var rubysass = require('gulp-ruby-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var imagemin = require('gulp-imagemin');
 var svgstore = require('gulp-svgstore');
 var cheerio = require('gulp-cheerio');
-// var svgSprite = require("gulp-svg-sprites");
-// var path = require('path');
-// var svgmin = require('gulp-svgmin');
-// var svg2png = require('gulp-svg2png');
-// var inject = require('gulp-inject');
-// var browserSync = require('browser-sync').create();
+var path = require('path');
+var svgmin = require('gulp-svgmin');
+var svg2png = require('gulp-svg2png');
+var inject = require('gulp-inject');
+var browserSync = require('browser-sync').create();
 var rename = require('gulp-rename');
-// var colorize = require('gulp-colorize-svgs');
-// var mergeStream = require('merge-stream');
+var colorize = require('gulp-colorize-svgs');
+var mergeStream = require('merge-stream');
 
 function errorlog (error) {  
   console.error.bind(error);  
@@ -121,10 +116,7 @@ gulp.task('inject', function () {
 });
 
 // server
-gulp.task('server', function () {
-  php.server(config.server);
-});
-gulp.task('browser-sync', ['server'], function() {
+gulp.task('browser-sync', function() {
   browserSync.init(config.browserSync);
 });
 
