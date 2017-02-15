@@ -131,6 +131,7 @@ gulp.task('default', [
   // 'min', 
   // 'inject', 
   // 'sprites',
+  // "removeSvgFill",
   'browser-sync', 
   'watch',
 ]);  
