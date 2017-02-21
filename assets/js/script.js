@@ -57,21 +57,21 @@ function onKeyup(e) {
     for (var i = svgNames.length; i--;) {
       var id = svgNames[i],
           svg = doc.querySelector('.item #' + id),
-          parent = svg.parentNode;
+          item = svg.parentNode.parentNode;
 
       if (keywords.length > 0 && keywords !== ' ') {
         if (id.indexOf(keywords) === -1) {
-          if (!parent.classList.contains('hidden')) {
-            parent.classList.add('hidden');
+          if (!item.classList.contains('hidden')) {
+            item.classList.add('hidden');
           }
         } else {
-          if (parent.classList.contains('hidden')) {
-            parent.classList.remove('hidden');
+          if (item.classList.contains('hidden')) {
+            item.classList.remove('hidden');
           }
         }
       } else {
-        if (parent.classList.contains('hidden')) {
-          parent.classList.remove('hidden');
+        if (item.classList.contains('hidden')) {
+          item.classList.remove('hidden');
         }
       }
     }

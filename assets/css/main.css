@@ -14,15 +14,21 @@ body {
   font-size: 24px;
   display: block;
   width: 100%;
+  height: 2.6em;
+  padding: 0 10px;
   border: 3px solid #FF8000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .search-clear {
   position: absolute;
   right: 0;
-  top: 4px;
-  padding: 10px 15px;
+  top: 3px;
+  padding: 12px 15px;
   cursor: pointer;
 }
+.search-clear img { display: block; }
 .collection {
   margin: 0;
   padding: 0;
@@ -39,28 +45,17 @@ h2 {
   display: inline-block;
   letter-spacing: 0;
   text-align: left;
-  padding: 1.5em 1em;
   margin: 10px;
   background: #fff;
   list-style: none;
   white-space: nowrap;
   text-align: center;
 }
-.item:hover input { border-color: #333; }
 .item:hover button {
-  color: #fff;
-  background-color: #333;
 }
 .collection svg { 
   width: 61px; 
   height: 61px; 
-}
-.collection div:nth-child(-n+5) svg { 
-  width: 180px;
-}
-svg {
-  display: block;
-  margin: 50px auto;
 }
 svg path,
 svg circle,
@@ -72,23 +67,30 @@ textarea {
   position: absolute;
   left: -50000px;
 }
-input, .copy-button {
-  font-size: 14px;
-  height: 2.6em;
-  padding: 0 10px;
-  border: 1px solid #eee;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  transition: all 0.25s;
+.svg-wrapper {
+  min-width: 14em;
+  padding: 2em 0;
+  text-align: center;
+}
+.icon-name {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
 }
 .copy-button {
-  min-width: 7em;
-  color: #000;
-  background: #eee;
-  cursor: pointer;
-  position: relative;
+  font-size: 14px;
+  width: 100%;
+  height: 3em;
+  padding: 0 10px;
+  color: #fff;
   border-width: 0;
+  background: #000;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.copy-button:hover {
+  color: #000;
+  background-color: #ff8000;
 }
 .copy-button:before {
   content: 'Copy code';
@@ -97,6 +99,7 @@ input, .copy-button {
   content: 'Copied';
 }
 .hidden { display: none; }
+#appstore, #googleplay, #googleplay_alt { width: 180px; }
 #menu1-line path { transition: all 0.3s; transform-origin: 50% 50%; }
 /* hover */
 /*#menu1-line:hover path:nth-child(1) { transform: translateY(-4px); }
