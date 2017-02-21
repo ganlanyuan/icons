@@ -1,6 +1,5 @@
 var clipboard = new Clipboard('.copy-button');
 clipboard.on('success', function(e) {
-    console.log(e.trigger);
     e.trigger.classList.add('copied');
     setTimeout(function () {
       e.trigger.classList.remove('copied');

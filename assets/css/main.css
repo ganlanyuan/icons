@@ -68,7 +68,11 @@ svg ellipse,
 svg polygon,
 svg polyline { vector-effect: non-scaling-stroke; }
 #sina_weibo path { vector-effect: none; }
-input, button {
+textarea {
+  position: absolute;
+  left: -50000px;
+}
+input, .copy-button {
   font-size: 14px;
   height: 2.6em;
   padding: 0 10px;
@@ -78,30 +82,20 @@ input, button {
   box-sizing: border-box;
   transition: all 0.25s;
 }
-button {
+.copy-button {
+  min-width: 7em;
   color: #000;
   background: #eee;
   cursor: pointer;
   position: relative;
   border-width: 0;
 }
-button:after {
-  content: "Copied!";
-  position: absolute;
-  z-index: 10;
-  right: 0;
-  top: 2.6em;
-  color: #fff;
-  display: block;
-  line-height: 2.6;
-  padding: 0 10px;
-  background: #000;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+.copy-button:before {
+  content: 'Copy code';
 }
-.copied:after { opacity: 1; }
+.copy-button.copied:before {
+  content: 'Copied';
+}
 .hidden { display: none; }
 #menu1-line path { transition: all 0.3s; transform-origin: 50% 50%; }
 /* hover */

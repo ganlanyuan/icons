@@ -102,7 +102,7 @@ gulp.task('inject', function () {
       var foldernameTem = filepath.replace('/svg-min/', '');
       var foldername = foldernameTem.slice(0, foldernameTem.indexOf('/'));
       var clear = (config.clear.indexOf(filename) !== -1)? '<h2>' + foldername + '</h2>' : '';
-      return clear + '<div class="item"><svg role="img" title="' + filename + '" id="' + filename + '"><use xlink:href="sprites.svg#' + filename + '" /></svg><input type="text" class="icon-name" id="' + filename + '-copy" value="' + filename + '"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#' + filename + '-copy">Copy</button></div>';
+      return clear + '<div class="item"><svg id="' + filename + '" role="img" title="' + filename + '"><use xlink:href="sprites.svg#' + filename + '" /></svg><input type="text" class="icon-name" id="" value="' + filename + '"><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#' + filename + '-copy"></button><textarea name="" id="' + filename + '-copy" cols="30" rows="10"><svg role="img" title="' + filename.replace(/-/g, ' ').replace(/\d/g, '').replace(/(\sfill|\sline)/g, '') + '"><use xlink:href="sprites.svg#' + filename + '" /></svg></textarea></div>';
     }
   }
 
@@ -129,7 +129,7 @@ gulp.task('watch', function () {
 // Default Task
 gulp.task('default', [
   // 'min', 
-  // 'inject', 
+  'inject', 
   // 'sprites',
   // "removeSvgFill",
   'browser-sync', 
