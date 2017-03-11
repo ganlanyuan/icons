@@ -1,3 +1,23 @@
+var gulp = require('gulp');
+var libsass = require('gulp-sass');
+var rubysass = require('gulp-ruby-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var imagemin = require('gulp-imagemin');
+var svgstore = require('gulp-svgstore');
+var cheerio = require('gulp-cheerio');
+var path = require('path');
+var svgmin = require('gulp-svgmin');
+var inject = require('gulp-inject');
+var browserSync = require('browser-sync').create();
+var rename = require('gulp-rename');
+var mergeStream = require('merge-stream');
+var nunjucks = require('gulp-nunjucks');
+var htmltidy = require('gulp-htmltidy');
+var fs = require("fs");
+var path = require("path");
+
 var config = {
   sassLang: 'libsass',
   browserSync: {
@@ -44,28 +64,15 @@ var config = {
 
 };
 
-var gulp = require('gulp');
-var libsass = require('gulp-sass');
-var rubysass = require('gulp-ruby-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemin');
-var svgstore = require('gulp-svgstore');
-var cheerio = require('gulp-cheerio');
-var path = require('path');
-var svgmin = require('gulp-svgmin');
-var inject = require('gulp-inject');
-var browserSync = require('browser-sync').create();
-var rename = require('gulp-rename');
-var mergeStream = require('merge-stream');
-var nunjucks = require('gulp-nunjucks');
-var htmltidy = require('gulp-htmltidy');
-
 function errorlog (error) {  
   console.error.bind(error);  
   this.emit('end');  
 }  
+
+function requireUncached( $module ) {
+  delete require.cache[require.resolve( $module )];
+  return require( $module );
+}
 
 // Svg Task
 gulp.task('min', function () {
@@ -94,15 +101,49 @@ gulp.task('sprites', function () {
     .pipe(gulp.dest(config.sprites.dest));
 });
 
+// dir to json
+gulp.task('dirToJson', function () {
+  var p = "svg-min/",
+      icons = {svgs: {}};
+
+  fs.readdir(p, function (err, dirs) {
+    if (err) { throw err; }
+
+    dirs.map(function (dir) {
+      return path.join(p, dir);
+    }).filter(function (dir) {
+      return fs.statSync(dir).isDirectory();
+    }).forEach(function (dir) {
+      var dirName = dir.replace(p, '').replace(/\s/g, '-');
+      icons.svgs[dirName] = [];
+
+      fs.readdir(dir, function (err, files) {
+        if (err) { throw err; }
+
+        files.map(function (file) {
+          return path.join(dir, file);
+        }).filter(function (file) {
+          return fs.statSync(file).isFile();
+        }).forEach(function (file) {
+          if (path.extname(file) === '.svg') {
+            icons.svgs[dirName].push(path.basename(file, '.svg'));
+          }
+
+          var str = JSON.stringify(icons, null, 2);
+          fs.writeFile('svgdir.json', str, function (err) {
+            if (err) { return console.log(err); }
+          })
+        });
+      });
+    });
+  });
+});
+
 // Nunjucks Task
 gulp.task('html', function() {
-  let data = requireUncached('./' + PATHS.templates + 'data.json');
-  data.year = new Date().getFullYear();
+  let data = requireUncached('./svgdir.json');
 
-  let imageCount = 0;
-  data.getImageCount = function () { return imageCount += 1; };
-
-  return gulp.src(PATHS.templates + '**/*.njk')
+  return gulp.src('*.njk')
     .pipe(nunjucks.compile(data), {
       watch: true,
       noCache: true,
@@ -120,75 +161,25 @@ gulp.task('html', function() {
     .pipe(gulp.dest('.'));
 });
 
-var fs = require("fs"),
-    path = require("path");
-
-var p = "svg-min/",
-    icons = {};
-fs.readdir(p, function (err, dirs) {
-  if (err) { throw err; }
-
-  dirs.map(function (dir) {
-    return path.join(p, dir);
-  }).filter(function (dir) {
-    return fs.statSync(dir).isDirectory();
-  }).forEach(function (dir) {
-    var dirName = dir.replace(p, '');
-    icons[dirName] = [];
-    fs.readdir(dir, function (err, files) {
-      if (err) { throw err; }
-      files.map(function (file) {
-        return path.join(dir, file);
-      }).filter(function (file) {
-        return fs.statSync(file).isFile();
-      }).forEach(function (file) {
-        if (path.extname(file) === '.svg') {
-          icons[dirName].push(path.basename(file, '.svg'));
-          console.log(icons);
-        }
-      })
-    });
-  });
-});
-
-gulp.task('inject', function () {
-  function fileContentsMarkup (filepath, file) {
-    if (filepath.slice(-4) === '.svg') {
-      var filename = filepath.slice(filepath.search(/([^/]*)$/), -4);
-      var foldernameTem = filepath.replace('/svg-min/', '');
-      var foldername = foldernameTem.slice(0, foldernameTem.indexOf('/'));
-      var clear = (config.clear.indexOf(filename) !== -1)? '<h2>' + foldername + '</h2>' : '';
-      return clear + '<div class="item"><div class="item-content"><div class="svg-wrapper"><svg id="' + filename + '" role="img" title="' + filename + '"><use xlink:href="sprites.svg#' + filename + '" /></svg><div class="icon-name">' + filename + '</div></div><button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#' + filename + '-copy"></button><textarea name="" id="' + filename + '-copy" cols="30" rows="10"><svg role="img" title="' + filename.replace(/-/g, ' ').replace(/\d/g, '').replace(/(\sfill|\sline)/g, '') + '"><use xlink:href="assets/svg/sprites.svg#' + filename + '" /></svg></textarea></div></div>';
-    }
-  }
-
-  return gulp.src(config.inject.target)
-    .pipe(inject(gulp.src(config.allSvgs), {
-      starttag: config.inject.starttagMarkup,
-      transform: fileContentsMarkup
-    }))
-    .pipe(gulp.dest(config.inject.dest))
-    .pipe(browserSync.stream());
-});
-
 // server
-gulp.task('browser-sync', function() {
+gulp.task('server', function() {
   browserSync.init(config.browserSync);
 });
 
 gulp.task('watch', function () {
   // gulp.watch(config.min.src, ['min']);
   // gulp.watch(config.sprites.src, ['sprites']);
+  gulp.watch('*.njk', ['html']);
   gulp.watch(config.watch).on('change', browserSync.reload);
 });
 
 // Default Task
 gulp.task('default', [
+  // 'dirToJson',
   // 'min', 
-  // 'html', 
-  // 'inject', 
   // 'sprites',
   // "removeSvgFill",
-  // 'browser-sync', 
-  // 'watch',
+  'html', 
+  'server', 
+  'watch',
 ]);  

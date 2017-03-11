@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Icons</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100, 300,400,700" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+  <script src="https://jonathantneal.github.io/svg4everybody/svg4everybody.min.js"></script>
+</head>
+<body>
+  <form action="" class="form-search">
+  <input type="text" id="search" placeholder='Press "/" to start seach' autofocus="">
+  <div class="search-clear"><img src="svg/line/unchecked-line.svg" alt="close" width="32" height="32"></div>
+  </form>
+  <div class="collection">
+  <!-- inject:markup -->
+  {% for dir, arr in svgs %}
+    <h2>{{ dir }}</h2>
+    <ul>
+    {% for svg in arr %}
+      <li>
+        <div class="item">
+          <div class="item-content">
+            <div class="svg-wrapper">
+              <svg id="{{ svg }}" role="img" title="{{ svg }}"><use xlink:href="sprites.svg#{{ svg }}" /></svg>
+              <div class="icon-name">{{ svg }}</div></div>
+              <button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#{{ svg }}-copy"></button>
+
+              {% set text = '<svg role="img" title="' + svg +  '"><use xlink:href="assets/svg/sprites.svg#' + svg + '" /></svg>' %}
+              <textarea name="" id="{{ svg }}-copy" cols="30" rows="10">{{ text | escape }}</textarea>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  {% endfor %}
+  <!-- endinject -->
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
