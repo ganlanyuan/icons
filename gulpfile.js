@@ -27,17 +27,15 @@ var config = {
     open: false,
     notify: false
   },
-  allSvgs: ['svg-min/**/*.svg', '!svg-min/social/currentColor/*.svg'],
-  newSvgs: ['svg/line/*.svg', 'svg/fill/*.svg'],
-  clear: ['appstore', 'amazon', 'bd', 'add-circle-line', 'dislike1-fill'],
-
+  allSvgs: ['min/**/*.svg', '!min/social/currentColor/*.svg'],
+  newSvgs: ['svg/**/*.svg'],
   watch: ['*.html', 'assets/**/*.css', 'assets/**/*.js'],
 
   min: {
     options: {
       plugins: [{
         convertPathData: {
-          floatPrecision: 1
+          floatPrecision: 2
         }
       }, {
         mergePaths: false
@@ -48,7 +46,7 @@ var config = {
       }]
     },
     base: 'svg',
-    dest: 'svg-min'
+    dest: 'min'
   },
 
   sprites: {
@@ -91,10 +89,10 @@ gulp.task('removeSvgFill', function () {
         $(this).removeAttr('fill');
       });
     }))
-    .pipe(gulp.dest('svg-min'))
+    .pipe(gulp.dest('min'))
 });
 
-gulp.task('sprites', function () {
+gulp.task('sprites', ['min'], function () {
   return gulp.src(config.allSvgs)
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename(config.sprites.name))
@@ -103,7 +101,7 @@ gulp.task('sprites', function () {
 
 // dir to json
 gulp.task('dirToJson', function () {
-  var p = "svg-min/",
+  var p = "min/",
       icons = {svgs: {}};
 
   fs.readdir(p, function (err, dirs) {
@@ -175,10 +173,9 @@ gulp.task('watch', function () {
 
 // Default Task
 gulp.task('default', [
-  // 'dirToJson',
-  // 'min', 
-  // 'sprites',
   // "removeSvgFill",
+  // 'sprites',
+  // 'dirToJson',
   'html', 
   'server', 
   'watch',

@@ -6,8 +6,10 @@
     <defs></defs>
     <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="home-fill" fill="#000000">
-            <polygon id="Path-25" points="8 21 8 45 20 45 20 34 28 34 28 45 40 45 40 21 24 9.5"></polygon>
-            <path d="M40,12.41911 L48,18.378665 L45.6409915,21.5953696 L24,5.47403466 L2.35900847,21.5953696 L1.33226763e-15,18.378665 L24,0.5 L36,9.43933252 L36,6 L40,6 L40,12.41911 Z" id="Combined-Shape"></path>
+            <g id="Group" transform="translate(5.000000, 5.000000)">
+                <polygon id="Path-25" points="6 17.7183099 6 38 15 38 15 28.7042254 23 28.7042254 23 38 32 38 32 17.7183099 19 8"></polygon>
+                <path d="M32,9.85795024 L38,14.4077734 L36.1324516,17 L19,4.00839572 L1.86754837,17 L-1.0658141e-14,14.4077734 L19,-3.90798505e-14 L29,7.58303865 L29,4 L32,4 L32,9.85795024 Z" id="Combined-Shape"></path>
+            </g>
         </g>
     </g>
 </svg>

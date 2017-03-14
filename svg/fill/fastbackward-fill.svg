@@ -6,8 +6,8 @@
     <defs></defs>
     <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="fastbackward-fill" fill="#000000">
-            <polygon id="Path-24" points="24 0 24 48 0 24"></polygon>
-            <polygon id="Path-24" points="48 0 48 48 24 24"></polygon>
+            <polygon id="Path-24" points="23 5 23 43 5 24"></polygon>
+            <polygon id="Path-24" points="43 5 43 43 25 24"></polygon>
         </g>
     </g>
 </svg>

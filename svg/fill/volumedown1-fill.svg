@@ -5,9 +5,9 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="volumedown1-fill">
-            <polygon id="Rectangle-13" fill="#000000" points="0 18 12 18 24 10 24 38 12 30 0 30"></polygon>
-            <path d="M29.193666,30.0850855 C30.9111853,28.61777 32,26.4360381 32,24 C32,21.5427953 30.8921819,19.3443355 29.1487539,17.8768285" id="Oval" stroke="#000000"></path>
+        <g id="volumedown1-fill" fill="#000000">
+            <polygon id="Rectangle-13" points="2 18 15 18 23 10 23 38 15 30 2 30"></polygon>
+            <path d="M27.4409618,29.4111652 L29.1232491,30.5959468 C30.8928082,28.9524462 32,26.6055223 32,24 C32,21.4967883 30.9780528,19.2322651 29.3286132,17.6008852 L27.6597355,18.7762228 C29.0958399,20.0581602 30,21.9234911 30,24 C30,26.1800623 29.0034123,28.127359 27.4409618,29.4111652 Z" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>

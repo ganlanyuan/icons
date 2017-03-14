@@ -6,9 +6,7 @@
     <defs></defs>
     <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="menu1-fill" fill="#000000">
-            <rect id="Rectangle" x="0" y="7" width="48" height="4"></rect>
-            <rect id="Rectangle-2" x="0" y="22" width="48" height="4"></rect>
-            <rect id="Rectangle-3" x="0" y="37" width="48" height="4"></rect>
+            <path d="M2,8 L46,8 L46,12 L2,12 L2,8 Z M2,22 L46,22 L46,26 L2,26 L2,22 Z M2,36 L46,36 L46,40 L2,40 L2,36 Z" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>

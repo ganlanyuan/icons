@@ -1,6 +1,6 @@
 {
   "svgs": {
-    "app-store-badges": [
+    "badges": [
       "appstore",
       "googleplay",
       "googleplay_alt"
@@ -27,7 +27,6 @@
       "menu-rect-fill-horizontal",
       "menu-rect-fill-vertical",
       "menu1-fill",
-      "menu2-fill",
       "pause-fill",
       "photogallery-fill",
       "pin-fill",
@@ -47,6 +46,7 @@
       "user4-fill",
       "volumedown1-fill",
       "volumedown2-fill",
+      "volumemiddle-fill",
       "volumeoff-fill",
       "volumeup1-fill",
       "volumeup2-fill"
@@ -130,7 +130,6 @@
       "unchecked-line",
       "upangle135",
       "upangle90",
-      "uparrow-line",
       "user2-line",
       "user3-line",
       "user4-line",
@@ -156,7 +155,6 @@
       "github_ring",
       "google",
       "googleplus",
-      "googleplus_noplus",
       "instagram",
       "linkedin",
       "location",
@@ -169,7 +167,6 @@
       "sina_weibo",
       "snapchat",
       "soundcloud",
-      "soundcloud_notext",
       "soundcloud_text",
       "tumblr",
       "twitter",

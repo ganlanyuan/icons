@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>volumemiddle-fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="volumemiddle-fill" fill="#000000">
+            <polygon id="Rectangle-13" points="2 18 15 18 23 10 23 38 15 30 2 30"></polygon>
+            <polygon id="Rectangle-13" points="2 18 15 18 23 10 23 38 15 30 2 30"></polygon>
+            <path d="M27.4409618,29.4111652 L29.1232491,30.5959468 C30.8928082,28.9524462 32,26.6055223 32,24 C32,21.4967883 30.9780528,19.2322651 29.3286132,17.6008852 L27.6597355,18.7762228 C29.0958399,20.0581602 30,21.9234911 30,24 C30,26.1800623 29.0034123,28.127359 27.4409618,29.4111652 Z" id="Combined-Shape"></path>
+            <path d="M33.0327699,33.3492983 L34.6935536,34.5189356 C37.3568763,31.811679 39,28.0977255 39,24 C39,20.003891 37.4373591,16.3727564 34.8897995,13.6843181 L33.2346031,14.8500204 C35.5623201,17.1991302 37,20.431671 37,24 C37,27.6703551 35.4789321,30.9854457 33.0327699,33.3492983 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
