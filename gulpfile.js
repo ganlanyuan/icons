@@ -80,18 +80,6 @@ gulp.task('min', function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task('removeSvgFill', function () {
-  return gulp.src(config.allSvgs)
-    .pipe(cheerio(function ($, file) {
-      $('svg[fill]').each(function() {
-        var fillColor = $(this).attr('fill');
-        $(this).html('<g fill="' + fillColor + '">' + $(this).html() + '</g>');
-        $(this).removeAttr('fill');
-      });
-    }))
-    .pipe(gulp.dest('min'))
-});
-
 gulp.task('sprites', ['min'], function () {
   return gulp.src(config.allSvgs)
     .pipe(svgstore({ inlineSvg: true }))
@@ -173,10 +161,9 @@ gulp.task('watch', function () {
 
 // Default Task
 gulp.task('default', [
-  // "removeSvgFill",
   // 'sprites',
   // 'dirToJson',
-  'html', 
+  // 'html', 
   'server', 
   'watch',
 ]);  
