@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>volumeoff-line</title>
+    <title>volumemiddle-line</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="volumeoff-line" stroke="#000000">
+        <g id="volumemiddle-line" stroke="#000000">
             <polygon id="Rectangle-13" points="1.5 18.8928571 14.5 18.8928571 22.5 11 22.5 37 14.5 29.1071429 1.5 29.1071429"></polygon>
+            <path d="M27.6822874,30.8242519 C29.4518464,29.1807512 30.5590382,26.8338274 30.5590382,24.2283051 C30.5590382,21.7250933 29.537091,19.4605701 27.8876514,17.8291903" id="Combined-Shape"></path>
+            <path d="M33.2525918,34.7472407 C35.9159145,32.039984 37.5590382,28.3260306 37.5590382,24.2283051 C37.5590382,20.2321961 35.9963974,16.6010614 33.4488377,13.9126231" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>

@@ -7,7 +7,7 @@
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="volumedown2-line" stroke="#000000">
             <path d="M28.5,23.5 L40.5,23.5" id="Path-45"></path>
-            <polygon id="Rectangle-13" points="1.5 18.8928571 12.5 18.8928571 23.5 11 23.5 37 12.5 29.1071429 1.5 29.1071429"></polygon>
+            <polygon id="Rectangle-13" points="2.5 18.8928571 15.5 18.8928571 23.5 11 23.5 37 15.5 29.1071429 2.5 29.1071429"></polygon>
         </g>
     </g>
 </svg>

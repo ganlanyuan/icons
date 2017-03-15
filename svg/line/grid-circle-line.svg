@@ -6,15 +6,15 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="grid-circle-line" stroke="#000000">
-            <circle id="Oval-3" cx="6" cy="6" r="4.5"></circle>
-            <circle id="Oval-3" cx="24" cy="6" r="4.5"></circle>
-            <circle id="Oval-3" cx="42" cy="6" r="4.5"></circle>
-            <circle id="Oval-3" cx="6" cy="24" r="4.5"></circle>
-            <circle id="Oval-3" cx="24" cy="24" r="4.5"></circle>
-            <circle id="Oval-3" cx="42" cy="24" r="4.5"></circle>
-            <circle id="Oval-3" cx="6" cy="42" r="4.5"></circle>
-            <circle id="Oval-3" cx="24" cy="42" r="4.5"></circle>
-            <circle id="Oval-3" cx="42" cy="42" r="4.5"></circle>
+            <circle id="Oval-3" cx="9.5" cy="9.5" r="4"></circle>
+            <circle id="Oval-3" cx="24" cy="9.5" r="4"></circle>
+            <circle id="Oval-3" cx="38.5" cy="9.5" r="4"></circle>
+            <circle id="Oval-3" cx="9.5" cy="24" r="4"></circle>
+            <circle id="Oval-3" cx="24" cy="24" r="4"></circle>
+            <circle id="Oval-3" cx="38.5" cy="24" r="4"></circle>
+            <circle id="Oval-3" cx="9.5" cy="38.5" r="4"></circle>
+            <circle id="Oval-3" cx="24" cy="38.5" r="4"></circle>
+            <circle id="Oval-3" cx="38.5" cy="38.5" r="4"></circle>
         </g>
     </g>
 </svg>

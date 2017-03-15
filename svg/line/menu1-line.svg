@@ -6,9 +6,9 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
         <g id="menu1-line" stroke="#000000">
-            <path d="M0.5,10.5 L47.5,10.5" id="Line"></path>
-            <path d="M0.5,23.5 L47.5,23.5" id="Line"></path>
-            <path d="M0.5,36.5 L47.5,36.5" id="Line"></path>
+            <path d="M2.5,11.5 L45.5,11.5" id="Line"></path>
+            <path d="M2.5,24.5 L45.5,24.5" id="Line"></path>
+            <path d="M2.5,37.5 L45.5,37.5" id="Line"></path>
         </g>
     </g>
 </svg>

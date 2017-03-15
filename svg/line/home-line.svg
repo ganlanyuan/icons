@@ -6,9 +6,9 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="home-line" stroke="#000000">
-            <polyline id="Combined-Shape" points="1 20 24 3 47 20"></polyline>
-            <polyline id="Path-25" points="8.5 21 8.5 44.5 19.5 44.5 19.5 33.5 28.5 33.5 28.5 44.5 39.5 44.5 39.5 21"></polyline>
-            <path d="M39.5,14.5 L39.5,10" id="Path-32"></path>
+            <polyline id="Combined-Shape" points="5 20.3809524 24 5 43 20.3809524"></polyline>
+            <polyline id="Path-25" points="10.5 22.5 10.5 42.5 20.5 42.5 20.5 32.6762632 27.5 32.6762632 27.5 42.5 37.5 42.5 37.5 22.5"></polyline>
+            <path d="M37.5,16 L37.5,11" id="Path-32"></path>
         </g>
     </g>
 </svg>
