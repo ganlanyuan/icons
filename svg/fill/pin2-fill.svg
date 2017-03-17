@@ -5,16 +5,8 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pin2-fill">
-            <g id="guide">
-                <rect id="bg" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="48" height="48"></rect>
-                <circle id="circle-outer" stroke="#BD0FE1" stroke-width="0.02" cx="24" cy="24" r="22"></circle>
-                <circle id="circle-inner" stroke="#BD0FE1" stroke-width="0.02" cx="24" cy="24" r="10"></circle>
-                <rect id="rectangle-horizontal" stroke="#BD0FE1" stroke-width="0.02" x="2" y="8" width="44" height="32" rx="3"></rect>
-                <rect id="rectangle-vertical" stroke="#BD0FE1" stroke-width="0.02" transform="translate(24.000000, 24.000000) rotate(90.000000) translate(-24.000000, -24.000000) " x="2" y="8" width="44" height="32" rx="3"></rect>
-                <rect id="square" stroke="#BD0FE1" stroke-width="0.02" x="5" y="5" width="38" height="38" rx="3"></rect>
-            </g>
-            <path d="M31.9511744,2 C31.7121535,3.21624678 30.6114184,4.28640544 29,5.01302116 L29,16.182904 C32.3637473,17.8883698 34.7328872,21.2718234 35.0060389,25.2318841 L13.0588408,25.2318841 C13.3302331,21.2973325 15.6706973,17.9319835 19,16.2160704 L19,5.01302116 C17.3885816,4.28640544 16.2878465,3.21624678 16.0488256,2 L31.9511744,2 Z M23,26 L25,26 L25,44 L24.0287292,46 L23,44 L23,26 Z" id="Combined-Shape" fill="#000000"></path>
+        <g id="pin2-fill" fill="#000000">
+            <path d="M31.9511744,2 C31.7121535,3.21624678 30.6114184,4.28640544 29,5.01302116 L29,16.182904 C32.3637473,17.8883698 34.7328872,21.2718234 35.0060389,25.2318841 L13.0588408,25.2318841 C13.3302331,21.2973325 15.6706973,17.9319835 19,16.2160704 L19,5.01302116 C17.3885816,4.28640544 16.2878465,3.21624678 16.0488256,2 L31.9511744,2 Z M23,26 L25,26 L25,44 L24.0287292,46 L23,44 L23,26 Z" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>

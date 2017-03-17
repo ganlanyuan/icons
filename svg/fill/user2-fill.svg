@@ -3,19 +3,16 @@
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>user2-fill</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <path d="M0.023985139,14.0000123 C0.00805841169,13.6809956 -4.4408921e-16,13.3599067 -4.4408921e-16,13.0369356 C-4.4408921e-16,10.4462439 0.518505812,7.97665584 1.45740378,5.7262849 C4.46744731,3.08537992 8.12956428,1.09705881 12.1907555,1.38310474e-11 C12.9565478,2.88529222 15.9383451,5.03693558 19.5,5.03693558 C23.0616549,5.03693558 26.0434522,2.88529222 26.8092445,2.38178921e-11 C30.1764799,0.909598943 33.2693723,2.43189469 35.9437172,4.43084516 C37.2586606,7.01456931 38,9.9391779 38,13.0369356 C38,13.3599067 37.9919416,13.6809956 37.9760149,14.0000123 L0.0239845255,14 Z" id="path-1"></path>
+    </defs>
     <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="user2-fill">
-            <g id="guide">
-                <rect id="bg" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="48" height="48"></rect>
-                <circle id="circle-outer" stroke="#BD0FE1" stroke-width="0.02" cx="24" cy="24" r="22"></circle>
-                <circle id="circle-inner" stroke="#BD0FE1" stroke-width="0.02" cx="24" cy="24" r="10"></circle>
-                <rect id="rectangle-horizontal" stroke="#BD0FE1" stroke-width="0.02" x="2" y="8" width="44" height="32" rx="3"></rect>
-                <rect id="rectangle-vertical" stroke="#BD0FE1" stroke-width="0.02" transform="translate(24.000000, 24.000000) rotate(90.000000) translate(-24.000000, -24.000000) " x="2" y="8" width="44" height="32" rx="3"></rect>
-                <rect id="square" stroke="#BD0FE1" stroke-width="0.02" x="5" y="5" width="38" height="38" rx="3"></rect>
-            </g>
-            <g id="body-woman-shirt" transform="translate(5.000000, 28.000000)" fill="#000000">
-                <path d="M12.1907555,0.963064421 C8.12956428,2.06012323 4.46744731,4.04844434 1.45740378,6.68934932 C0.518505812,8.93972026 0,11.4093084 0,14 C0,24.4934102 8.50658975,33 19,33 C29.4934102,33 38,24.4934102 38,14 C38,10.9022423 37.2586606,7.97763373 35.9437172,5.39390958 C33.2693723,3.39495911 30.1764799,1.87266336 26.8092445,0.963064421 C26.0434522,3.84835664 23.0616549,6 19.5,6 C15.9383451,6 12.9565478,3.84835664 12.1907555,0.963064421 Z"></path>
+            <g id="body-woman-shirt" transform="translate(5.000000, 28.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
             </g>
             <g id="head-oval2" transform="translate(16.000000, 5.000000)" fill="#000000">
                 <path d="M8.5,22 C12.1944204,22 17,16.0751322 17,10 C17,3.92486775 14.1944204,0 8.5,0 C2.80557963,9.0247283e-16 0,3.92486775 0,10 C0,16.0751322 4.80557963,22 8.5,22 Z" id="head-oval"></path>
