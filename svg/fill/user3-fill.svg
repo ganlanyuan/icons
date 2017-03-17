@@ -3,11 +3,33 @@
     <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
     <title>user3-fill</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <rect id="path-1" x="5" y="5" width="38" height="38"></rect>
+    </defs>
     <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="user3-fill" fill="#000000">
-            <path d="M31.3333333,21 C38.9259259,21.75 45,23.25 45,29.25 C45,36.75 33.6111111,48 24.5,48 C15.3888889,48 4,36.75 4,29.25 C4,24 9.31481481,21.75 16.1481481,21 C18.4259259,24 21.462963,25.5 23.7407407,25.5 C26.0185185,25.5 29.0555556,24 31.3333333,21 Z" id="Combined-Shape"></path>
-            <path d="M23.7407407,21.75 C28.2962963,21.75 33.6111111,15 33.6111111,9 C33.6111111,3 29.0555556,0 23.7407407,0 C18.4259259,7.17124905e-16 13.8703704,3 13.8703704,9 C13.8703704,15 19.1851852,21.75 23.7407407,21.75 Z" id="Oval"></path>
+        <g id="user3-fill">
+            <g id="guide">
+                <rect id="bg" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="48" height="48"></rect>
+                <circle id="circle-outer" stroke="#BD0FE1" stroke-width="0.02" cx="24" cy="24" r="22"></circle>
+                <circle id="circle-inner" stroke="#BD0FE1" stroke-width="0.02" cx="24" cy="24" r="10"></circle>
+                <rect id="rectangle-horizontal" stroke="#BD0FE1" stroke-width="0.02" x="2" y="8" width="44" height="32" rx="3"></rect>
+                <rect id="rectangle-vertical" stroke="#BD0FE1" stroke-width="0.02" transform="translate(24.000000, 24.000000) rotate(90.000000) translate(-24.000000, -24.000000) " x="2" y="8" width="44" height="32" rx="3"></rect>
+                <rect id="square" stroke="#BD0FE1" stroke-width="0.02" x="5" y="5" width="38" height="38" rx="3"></rect>
+            </g>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g id="body-man-suit" mask="url(#mask-2)" fill="#000000">
+                <g transform="translate(5.000000, 29.000000)">
+                    <polygon points="0.808510638 5.72727273 13.9361702 0 19 11.9090909 24.6595745 0 37.1914894 5.72727273 38 14 0 14"></polygon>
+                </g>
+            </g>
+            <g id="hear-man" mask="url(#mask-2)" fill="#000000">
+                <g transform="translate(15.000000, 5.000000)">
+                    <path d="M1.43527362,13.4380782 C0.899760671,12.8689829 0.418509579,12.2463957 0,11.5789626 L0,9.49591445 C0,4.25146571 4.25214127,0 9.5,0 C14.7467051,0 19,4.25015576 19,9.49591445 L19,12.8619606 C18.5080721,13.4565526 17.9607229,14.0019217 17.3660739,14.4897872 L16.9032151,10.3240579 C16.7829097,9.24130963 15.7911315,8.22255737 14.6910463,8.07587934 L4.77236836,6.75338895 C3.67129664,6.60657939 2.61000459,7.3686348 2.3997029,8.45519357 L1.43527362,13.4380782 Z"></path>
+                </g>
+            </g>
         </g>
     </g>
 </svg>

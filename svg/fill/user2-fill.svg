@@ -5,8 +5,21 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="user2-fill" fill="#000000">
-            <path d="M33.75,23.4390244 C35.25,24.1869919 38.25,16.7073171 35.25,16.7073171 C37.5,11.4715447 34.5,1 24,1 C13.5,1 10.5,12.2195122 12.75,16.7073171 C9.75,16.7073171 12.75,24.1869919 14.25,23.4390244 C14.25,23.4390244 15,26.4308943 16.5,28.6747967 L16.5,32.4146341 C16.5,34.6585366 3.82327809e-16,35.4065189 0,41.3902439 C0,48.8699187 48,48.8699187 48,41.3902439 C48,35.4065136 31.5,34.6585366 31.5,32.4146341 L31.5,28.6747967 C33,26.4308943 33.75,23.4390244 33.75,23.4390244 Z" id="Shape"></path>
+        <g id="user2-fill">
+            <g id="guide">
+                <rect id="bg" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="48" height="48"></rect>
+                <circle id="circle-outer" stroke="#BD0FE1" stroke-width="0.02" cx="24" cy="24" r="22"></circle>
+                <circle id="circle-inner" stroke="#BD0FE1" stroke-width="0.02" cx="24" cy="24" r="10"></circle>
+                <rect id="rectangle-horizontal" stroke="#BD0FE1" stroke-width="0.02" x="2" y="8" width="44" height="32" rx="3"></rect>
+                <rect id="rectangle-vertical" stroke="#BD0FE1" stroke-width="0.02" transform="translate(24.000000, 24.000000) rotate(90.000000) translate(-24.000000, -24.000000) " x="2" y="8" width="44" height="32" rx="3"></rect>
+                <rect id="square" stroke="#BD0FE1" stroke-width="0.02" x="5" y="5" width="38" height="38" rx="3"></rect>
+            </g>
+            <g id="body-woman-shirt" transform="translate(5.000000, 28.000000)" fill="#000000">
+                <path d="M12.1907555,0.963064421 C8.12956428,2.06012323 4.46744731,4.04844434 1.45740378,6.68934932 C0.518505812,8.93972026 0,11.4093084 0,14 C0,24.4934102 8.50658975,33 19,33 C29.4934102,33 38,24.4934102 38,14 C38,10.9022423 37.2586606,7.97763373 35.9437172,5.39390958 C33.2693723,3.39495911 30.1764799,1.87266336 26.8092445,0.963064421 C26.0434522,3.84835664 23.0616549,6 19.5,6 C15.9383451,6 12.9565478,3.84835664 12.1907555,0.963064421 Z"></path>
+            </g>
+            <g id="head-oval2" transform="translate(16.000000, 5.000000)" fill="#000000">
+                <path d="M8.5,22 C12.1944204,22 17,16.0751322 17,10 C17,3.92486775 14.1944204,0 8.5,0 C2.80557963,9.0247283e-16 0,3.92486775 0,10 C0,16.0751322 4.80557963,22 8.5,22 Z" id="head-oval"></path>
+            </g>
         </g>
     </g>
 </svg>
