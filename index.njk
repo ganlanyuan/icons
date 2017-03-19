@@ -26,7 +26,13 @@
               <div class="icon-name">{{ svg }}</div></div>
               <button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#{{ svg }}-copy"></button>
 
-              {% set text = '<svg role="img" title="' + svg +  '"><use xlink:href="assets/svg/sprites.svg#' + svg + '" /></svg>' %}
+              {% set svgtitle = svg 
+                | replace('fill', '')
+                | replace('line', '')
+                | replace('-', ' ')
+                | replace(r/\d/g, '')
+              %}
+              {% set text = '<svg role="img" title="' + svgtitle +  '"><use xlink:href="assets/svg/sprites.svg#' + svg + '" /></svg>' %}
               <textarea name="" id="{{ svg }}-copy" cols="30" rows="10">{{ text | escape }}</textarea>
           </div>
         </div>
