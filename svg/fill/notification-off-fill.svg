@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>notification-off-fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="notification-off-fill">
+            <g id="notification" transform="translate(8.000000, 5.000000)" fill="#000000">
+                <path d="M13.5,4.37805246 C9.18693197,5.71018083 6,10.4084817 6,16 L6,20 L5.98821931,20 C5.99604862,20.1658568 6,20.3325438 6,20.5 C6,24.3019147 3.96318417,27.7073929 0.749274041,30 L31.250726,30 C28.0368158,27.7073929 26,24.3019147 26,20.5 C26,20.3325438 26.0039514,20.1658568 26.0117807,20 L26,20 L26,16 C26,10.4084817 22.813068,5.71018083 18.5,4.37805246 L18.5,2.49762669 C18.5,1.12768844 17.3807119,0 16,0 C14.6096621,0 13.5,1.11822556 13.5,2.49762669 L13.5,4.37805246 Z" id="Combined-Shape"></path>
+                <path d="M20.4725356,32 C20.4906833,32.1641669 20.5,32.3309955 20.5,32.5 C20.5,34.9852814 18.4852814,37 16,37 C13.5147186,37 11.5,34.9852814 11.5,32.5 C11.5,32.3309955 11.5093167,32.1641669 11.5274644,32 L20.4725356,32 Z" id="Oval-7"></path>
+            </g>
+            <g id="disable-line" transform="translate(9.000000, 7.000000)">
+                <rect id="Rectangle-8" fill="#000000" transform="translate(15.171573, 17.292893) rotate(45.000000) translate(-15.171573, -17.292893) " x="-4.32842712" y="15.7928932" width="39" height="3"></rect>
+                <rect id="Rectangle-8" fill="#FFFFFF" transform="translate(17.292893, 15.171573) rotate(45.000000) translate(-17.292893, -15.171573) " x="-2.20710678" y="13.6715729" width="39" height="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
