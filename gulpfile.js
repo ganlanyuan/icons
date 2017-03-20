@@ -162,8 +162,8 @@ gulp.task('watch', function () {
 // Default Task
 gulp.task('default', [
   // 'sprites',
-  // 'dirToJson',
+  'dirToJson',
   // 'html', 
-  'server', 
-  'watch',
+  // 'server', 
+  // 'watch',
 ]);  

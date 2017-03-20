@@ -9,6 +9,7 @@ services:
     volumes:
       - .:/www/web/
     working_dir: /www/web
+    container_name: icons
     entrypoint: sh /www/start.sh
     stdin_open: true
     tty: true
