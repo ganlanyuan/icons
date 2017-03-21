@@ -18,6 +18,8 @@ var htmltidy = require('gulp-htmltidy');
 var fs = require("fs");
 var path = require("path");
 
+var svgFolder = "min/",
+    svgDir = {svgs: {}};
 var config = {
   sassLang: 'libsass',
   browserSync: {
@@ -87,53 +89,35 @@ gulp.task('sprites', ['min'], function () {
     .pipe(gulp.dest(config.sprites.dest));
 });
 
-// dir to json
-gulp.task('dirToJson', function () {
-  var p = "min/",
-      icons = {svgs: {}};
-
-  fs.readdir(p, function (err, dirs) {
-    if (err) { throw err; }
-
-    dirs.map(function (dir) {
-      return path.join(p, dir);
-    }).filter(function (dir) {
-      return fs.statSync(dir).isDirectory();
-    }).forEach(function (dir) {
-      var dirName = dir.replace(p, '').replace(/\s/g, '-');
-      icons.svgs[dirName] = [];
-
-      fs.readdir(dir, function (err, files) {
-        if (err) { throw err; }
-
-        files.map(function (file) {
-          return path.join(dir, file);
-        }).filter(function (file) {
-          return fs.statSync(file).isFile();
-        }).forEach(function (file) {
-          if (path.extname(file) === '.svg') {
-            icons.svgs[dirName].push(path.basename(file, '.svg'));
-          }
-
-          var str = JSON.stringify(icons, null, 2);
-          fs.writeFile('svgdir.json', str, function (err) {
-            if (err) { return console.log(err); }
-          })
-        });
-      });
-    });
-  });
-});
-
 // Nunjucks Task
 gulp.task('html', function() {
-  let data = requireUncached('./svgdir.json');
+  // get svgDir
+  var dirMin = fs.readdirSync(svgFolder);
+  dirMin.map(function (dir) {
+    return path.join(svgFolder, dir);
+  }).filter(function (dir) {
+    return fs.statSync(dir).isDirectory();
+  }).forEach(function (dir) {
+    var dirName = dir.replace('min/', '').replace(/\s/g, '-');
+    svgDir.svgs[dirName] = [];
+
+    var files = fs.readdirSync(dir);
+    files.map(function (file) {
+      return path.join(dir, file);
+    }).filter(function (file) {
+      return fs.statSync(file).isFile();
+    }).forEach(function (file) {
+      if (path.extname(file) === '.svg') {
+        svgDir.svgs[dirName].push(path.basename(file, '.svg'));
+      }
+    });
+  });
 
   return gulp.src('*.njk')
-    .pipe(nunjucks.compile(data), {
+    .pipe(nunjucks.compile(svgDir, {
       watch: true,
       noCache: true,
-    })
+    }))
     .pipe(rename(function (path) { path.extname = ".html"; }))
     .pipe(htmltidy({
       doctype: 'html5',
@@ -162,8 +146,7 @@ gulp.task('watch', function () {
 // Default Task
 gulp.task('default', [
   // 'sprites',
-  'dirToJson',
-  // 'html', 
-  // 'server', 
-  // 'watch',
+  'html', 
+  'server', 
+  'watch',
 ]);  
