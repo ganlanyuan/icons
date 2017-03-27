@@ -8,7 +8,9 @@
         <g id="volumeup2-line" stroke="#000000">
             <path d="M34.5,17.5 L34.5,29.5" id="Path-46"></path>
             <path d="M28.5,23.5 L40.5,23.5" id="Path-45"></path>
-            <polygon id="Rectangle-13" points="2.5 18.8928571 15.5 18.8928571 23.5 11 23.5 37 15.5 29.1071429 2.5 29.1071429"></polygon>
+            <g id="volume-base" transform="translate(11.000000, 13.000000)">
+                <polygon id="Rectangle-13" points="0.5 7.5 4.5 7.5 11.5 0.5 11.5 22.5 4.5 15.5 0.5 15.5"></polygon>
+            </g>
         </g>
     </g>
 </svg>

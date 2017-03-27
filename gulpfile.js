@@ -146,7 +146,7 @@ gulp.task('watch', function () {
 // Default Task
 gulp.task('default', [
   // 'sprites',
-  'html', 
+  // 'html', 
   'server', 
   'watch',
 ]);  

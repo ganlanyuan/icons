@@ -6,7 +6,9 @@
     <defs></defs>
     <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="volumeoff-line" stroke="#000000">
-            <polygon id="Rectangle-13" points="1.5 18.8928571 14.5 18.8928571 22.5 11 22.5 37 14.5 29.1071429 1.5 29.1071429"></polygon>
+            <g id="volume-base" transform="translate(11.000000, 13.000000)">
+                <polygon id="Rectangle-13" points="0.5 7.5 4.5 7.5 11.5 0.5 11.5 22.5 4.5 15.5 0.5 15.5"></polygon>
+            </g>
         </g>
     </g>
 </svg>
