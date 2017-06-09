@@ -22,7 +22,7 @@
         <div class="item">
           <div class="item-content">
             <div class="svg-wrapper">
-              <svg id="{{ svg }}" role="img" title="{{ svg }}"><use xlink:href="sprites.svg#{{ svg }}" /></svg>
+              <svg id="{{ svg }}" role="img"><use xlink:href="sprites.svg#{{ svg }}" /></svg>
               <div class="icon-name">{{ svg }}</div></div>
               <button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#{{ svg }}-copy"></button>
 
@@ -32,7 +32,7 @@
                 | replace('-', ' ')
                 | replace(r/\d/g, '')
               %}
-              {% set text = '<svg role="img" title="' + svgtitle +  '"><use xlink:href="assets/svg/sprites.svg#' + svg + '" /></svg>' %}
+              {% set text = '<svg role="img"><use xlink:href="assets/svg/sprites.svg#' + svg + '" /></svg>' %}
               <textarea name="" id="{{ svg }}-copy" cols="30" rows="10">{{ text | escape }}</textarea>
           </div>
         </div>
