@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>trash-line1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="trash-line1" stroke="#000000">
+            <g id="trash-head" transform="translate(8.000000, 5.000000)">
+                <path d="M0.5,7.5 L31.5,7.5" id="Line" stroke-linecap="square"></path>
+                <polyline id="Path-9" points="11.5 7.5 11.5 1.5 20.5 1.5 20.5 7.5"></polyline>
+            </g>
+            <path d="M12.5,15.5737706 L14.2783234,39.5155427 C14.400752,41.1638129 15.8360431,42.5 17.5001221,42.5 L30.4998779,42.5 C32.1567996,42.5 33.5991803,41.1610658 33.7216766,39.5073661 L35.5,15.5" id="Path-9"></path>
+        </g>
+    </g>
+</svg>

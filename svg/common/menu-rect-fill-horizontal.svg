@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>menu-rect-fill-horizontal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu-rect-fill-horizontal" fill="#000000">
+            <path d="M5,20 L13,20 L13,28 L5,28 L5,20 Z M20,20 L28,20 L28,28 L20,28 L20,20 Z M35,20 L43,20 L43,28 L35,28 L35,20 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

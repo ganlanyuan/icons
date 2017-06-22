@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>volume-up-fill2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="volume-up-fill2">
+            <path d="M35,18 L35,30" id="Path-46" stroke="#000000" stroke-width="2"></path>
+            <path d="M29,24 L41,24" id="Path-45" stroke="#000000" stroke-width="2"></path>
+            <g id="volume-base" transform="translate(11.000000, 13.000000)" fill="#000000">
+                <polygon id="Rectangle-13" points="0 7 4 7 11 0 11 22 4 15 0 15"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

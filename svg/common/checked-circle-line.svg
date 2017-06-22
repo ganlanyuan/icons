@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>checked-circle-line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="checked-circle-line" stroke="#000000">
+            <polyline id="right" points="12 25 20.3333333 33 37 17"></polyline>
+            <circle id="Oval-11" cx="24" cy="24" r="21.5"></circle>
+        </g>
+    </g>
+</svg>

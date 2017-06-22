@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>volume-up-line1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="volume-up-line1" stroke="#000000">
+            <g id="volume-base" transform="translate(11.000000, 13.000000)">
+                <polygon id="Rectangle-13" points="0.458333333 7.17391304 4.125 7.17391304 10.5416667 0.47826087 10.5416667 21.5217391 4.125 14.826087 0.458333333 14.826087"></polygon>
+            </g>
+            <path d="M34.0016654,6.67660739 C39.9787607,10.1349386 44,16.5978639 44,24 C44,31.4021361 39.9787607,37.8650614 34.0016654,41.3233926 L34.0016654,41.3233926 L34.0016654,41.3233926" id="Combined-Shape"></path>
+            <path d="M30.5010825,12.7397948 C34.3861944,14.9877101 37,19.1886115 37,24 C37,28.8113885 34.3861944,33.0122899 30.5010825,35.2602052 L30.5010825,35.2602052 L30.5010825,35.2602052" id="Combined-Shape"></path>
+            <path d="M27.0004996,18.8029822 C28.7936282,19.8404816 30,21.7793592 30,24 C30,26.2206408 28.7936282,28.1595184 27.0004996,29.1970178 L27.0004996,29.1970178" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

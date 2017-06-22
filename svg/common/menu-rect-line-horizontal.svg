@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>menu-rect-line-horizontal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu-rect-line-horizontal" stroke="#000000">
+            <rect id="Rectangle-5" x="5.5" y="20.5" width="8" height="8"></rect>
+            <rect id="Rectangle-5" x="20" y="20.5" width="8" height="8"></rect>
+            <rect id="Rectangle-5" x="34.5" y="20.5" width="8" height="8"></rect>
+        </g>
+    </g>
+</svg>

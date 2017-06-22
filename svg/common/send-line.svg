@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>send-line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="send-line" stroke="#000000">
+            <polyline id="Path-12" points="5.5 32 5.5 42.5 42.5 42.5 42.5 32"></polyline>
+            <path d="M16,32 L39,9" id="Path-14"></path>
+            <polyline id="Path-13" points="29 8.5 39.5 8.5 39.5 19"></polyline>
+        </g>
+    </g>
+</svg>

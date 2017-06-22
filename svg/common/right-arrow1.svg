@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>right-arrow1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="right-arrow1" stroke="#000000">
+            <polyline id="Rectangle-2" transform="translate(23.854198, 24.494198) scale(-1, 1) rotate(-135.000000) translate(-23.854198, -24.494198) " points="10.5222667 11.1622666 37.186129 11.1622666 37.186129 37.8261288"></polyline>
+            <path d="M10.5236686,11.1646843 L37.1942999,37.8353157" id="Line" transform="translate(23.858984, 24.500000) rotate(-45.000000) translate(-23.858984, -24.500000) "></path>
+        </g>
+    </g>
+</svg>

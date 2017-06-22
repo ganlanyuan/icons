@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-line2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin-line2" stroke="#000000">
+            <path d="M31.4572776,2.5 C31.2300774,3.82125441 30.1130601,4.97010599 28.5,5.69341403 L28.5,16.3320874 C32.0318096,17.8752006 34.5,21.3993619 34.5,25.5 L14.5,25.5 C14.5,21.3993619 16.9681904,17.8752006 20.5,16.3320874 L20.5,5.69341403 C18.8869399,4.97010599 17.7699226,3.82125441 17.5427224,2.5 L31.4572776,2.5 Z" id="Combined-Shape"></path>
+            <path d="M24.5,25.5 L24.5,45.5" id="Line" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>pin2-fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin2-fill" fill="#000000">
+            <path d="M25,25 L34.0324399,25 C34.0324399,20.8868186 31.5491266,17.3536461 28,15.8179825 L28,5.19341403 C29.6130601,4.47010599 30.7300774,3.32125441 30.9572776,2 L17.0427224,2 C17.2699226,3.32125441 18.3869399,4.47010599 20,5.19341403 L20,15.8463298 C16.4855259,17.3968057 14.0324399,20.9119284 14.0324399,25 L23,25 L23,44 L24.0287292,46 L25,44 L25,25 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

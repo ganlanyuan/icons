@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>comment-circle-line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="comment-circle-line" stroke="#000000">
+            <path d="M24.5547847,34.6504818 C22.0918349,37.6210621 18.4559164,39.5 14.4001807,39.5 C13.9232129,39.5 13.4520515,39.4740133 12.9879213,39.4233204 C15.0749507,38.100957 16.789938,36.2012279 17.930151,33.936056 C10.694269,32.160174 5.5,27.2979658 5.5,21.578125 C5.5,14.355276 13.7827321,8.5 24,8.5 C34.2172679,8.5 42.5,14.355276 42.5,21.578125 C42.5,28.6697834 34.5154185,34.4430968 24.5547847,34.6504818 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
