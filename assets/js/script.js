@@ -72,9 +72,9 @@ var svgNames = [],
 
 window.addEventListener('load', function () {
   for (var i = svgs.length; i--;) {
-    var title = svgs[i].getAttribute('title');
-    if (title !== null) {
-      svgNames.push(title);
+    var id = svgs[i].id;
+    if (id !== null) {
+      svgNames.push(id);
     }
   }
 });
